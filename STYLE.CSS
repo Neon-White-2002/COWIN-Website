@@ -1,0 +1,2739 @@
+/* STYLE-SHEET */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    letter-spacing: 0.055rem;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Nunito', sans-serif;
+}
+
+body
+{
+    background: rgba(255, 255, 255, 0.7);
+}
+
+body::-webkit-scrollbar
+{
+    width: 0.5rem;
+    height: 100%;
+}
+
+body::-webkit-scrollbar-thumb
+{
+    border-radius: 0.5rem;
+    background: #CCC;
+}
+
+header
+{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3.5rem;
+    padding: 0.5rem 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: #045D5D;
+    z-index: 100;
+}
+
+header a
+{
+    width: auto;
+    height: 100%;
+    gap: 0.3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color: #FFF;
+}
+
+header a .minister-logo
+{
+    width: 1.5rem;
+    height: 100%;
+    object-fit: contain;
+}
+
+header span
+{
+    width: 50%;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+header a:hover span
+{
+    text-decoration: underline;
+    transition: 0.5s ease;
+}
+
+header .header-sub-content
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+header .header-sub-content .font-size-button
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+header .header-sub-content .font-size-button button
+{
+    width: 2.5rem;
+    height: 100%;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    border: 0.05rem solid #CCC;
+    font-size: 0.85rem;
+    color: #FFF;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+header .header-sub-content .font-size-button button.active-font-size-button
+{
+    border: 0.10rem solid #FFF;
+    font-weight: 700;
+}
+
+header .header-sub-content .language
+{
+    position: relative;
+    width: 15rem;
+    height: 100%;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    color: #FFF;
+    cursor: pointer;
+}
+
+header .header-sub-content .language p
+{
+    font-size: 0.95rem;
+}
+
+header .header-sub-content .language i
+{
+    font-size: 0.85rem;
+}
+
+header .header-sub-content .language .language-option
+{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    height: 15rem;
+    border-radius: 0.3rem;
+    background: #FFF;
+    overflow-y: auto;
+    filter: drop-shadow(0.15rem 0.15rem 0.5rem rgba(0, 0, 0, 0.3));
+    z-index: 1000;
+    display: none;
+    animation: show-language-option 1.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+
+header .header-sub-content .language .language-option.active-language-option
+{
+    display: block;
+}
+
+@keyframes show-language-option
+{
+    0%
+    {
+        transform: translateY(-0.5rem);
+    }
+}
+
+header .header-sub-content .language .language-option::-webkit-scrollbar
+{
+    width: 0.15rem;
+    height: 100%;
+}
+
+header .header-sub-content .language .language-option::-webkit-scrollbar-thumb
+{
+    border-radius: 0.5rem;
+    background: #CCC;
+}
+
+header .header-sub-content .language .language-option ul
+{
+    width: 100%;
+    padding: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+header .header-sub-content .language .language-option ul li
+{
+    flex: 0 0 auto;
+    width: 100%;
+    height: 2.5rem;
+    padding: 0.3rem;
+    display: flex;
+    align-items: center;
+    font-size: 0.85rem;
+    color: #333;
+    border-radius: 0.3rem;
+    list-style: none;
+    transition: 0.5s ease-in-out;
+}
+
+header .header-sub-content .language .language-option ul li:hover
+{
+    background: rgba(0, 0, 0, 0.05);
+}
+
+header .header-sub-content .language .language-option ul li.active-language
+{
+    background: rgba(0, 0, 0, 0.07);
+} 
+
+nav
+{
+    position: sticky;
+    top: 3.5rem;
+    left: 0;
+    width: 100%;
+    height: 3.5rem;
+    padding: 0.5rem 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: #017E7E;
+    z-index: 10;
+}
+
+nav a
+{
+    width: auto;
+    height: 100%;
+}
+
+nav a img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+nav .nav-sub-content
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+nav .nav-sub-content a
+{
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #FFF;
+    text-transform: uppercase;
+    transition: 0.5s ease-in-out;
+}
+
+nav .nav-sub-content a:hover
+{
+    color: #FFC107;
+}
+
+nav .nav-sub-content a:last-child
+{
+    border-radius: 1.5rem;
+    border: 0.10rem solid #FFF;
+    padding: 0.5rem 1.5rem;
+}
+
+nav .nav-sub-content a:last-child:hover
+{
+    border-color: #FFC107;
+}
+
+.cowin-advertise-conatiner
+{
+    width: 100%;
+    height: 35rem;
+    padding: 1.5rem;
+    gap: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: url(IMAGES/cowin-advertise-background.png) center no-repeat;
+    background-size: cover;
+}
+
+.cowin-advertise-conatiner .advertise-content, 
+.cowin-advertise-conatiner .advertise-cowin-photo
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    height: 100%;
+}
+
+.cowin-advertise-conatiner .advertise-content h3
+{
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+
+.cowin-advertise-conatiner .advertise-content h5
+{
+    font-size: 1.0rem;
+    font-weight: 700;
+}
+
+.cowin-advertise-conatiner .advertise-content p
+{
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.cowin-advertise-conatiner .advertise-content .vaccination-records
+{
+    margin: 1.5rem 0;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border: 0.15rem solid #FD5428;
+    border-radius: 0.3rem;
+}
+
+.cowin-advertise-conatiner .advertise-content .vaccination-records span
+{
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: #FD5428;
+}
+
+.cowin-advertise-conatiner .advertise-cowin-photo img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.vaccination-records-container-view
+{
+    position: relative;
+    width: 100%;
+    height: 5.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background : linear-gradient(130deg,#007C7C 50%,#04C4C4 0);
+}
+
+.vaccination-records-container-view a
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1.5;
+    background: #FFC107;
+    color: #333;
+    padding: 0.5rem 2.5rem;
+    font-size: 0.85rem;
+    font-weight: 900;
+    border-radius: 1.5rem;
+    border: 0.15rem solid #FFF;
+    filter: drop-shadow(0.15rem 0.15rem 0.35rem rgba(0, 0, 0, 0.5));
+}
+
+.vaccination-records-container-view .total-vaccination-container,
+.vaccination-records-container-view .today-vaccination-container
+{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.vaccination-records-container-view .total-vaccination-container p,
+.vaccination-records-container-view .today-vaccination-container p
+{
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: #FFF;
+    text-transform: uppercase;
+}
+
+.vaccination-records-container-view .total-vaccination-container span,
+.vaccination-records-container-view .today-vaccination-container span
+{
+    font-size: 1.55rem;
+    font-weight: 700;
+    color: #FFF;
+}
+
+.get-vaccinated-container
+{
+    width: 100%;
+    height: auto;
+    padding: 2.5rem;
+    background: #EDFFFF;
+}
+
+.get-vaccinated-container h5
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #007C7C;
+    margin-bottom: 3.5rem;
+    gap: 0.5rem;
+    text-shadow: 0.15rem 0.15rem 0.15rem rgba(0, 0, 0, 0.3);
+}
+
+.get-vaccinated-container .get-vaccinated-box-container
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.get-vaccinated-container .get-vaccinated-box-container i.fa-angle-right
+{
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #02AEAE;
+}
+
+.get-vaccinated-container .get-vaccinated-box-container .get-vaccinated-box-view
+{
+    position: relative;
+    width: 17.5rem;
+    height: 25rem;
+    padding: 0.7rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background: #FFF;
+    border-radius: 0.3rem;
+    filter: drop-shadow(0.0rem 0.0rem 0.55rem rgba(0, 0, 0, 0.15));
+}
+
+.get-vaccinated-container .get-vaccinated-box-container .get-vaccinated-box-view .step-box-view
+{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: auto;
+    padding: 0.5rem 1.5rem;
+    background: #FFF;
+    border-radius: 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 900;
+    color: #007C7C;
+    border: 0.07rem solid #007C7C;
+    filter: drop-shadow(0.0rem 0.0rem 0.35rem rgba(0, 0, 0, 0.05));
+}
+
+.get-vaccinated-container .get-vaccinated-box-container .get-vaccinated-box-view .get-vaccinated-photo
+{
+    width: 75%;
+    height: 10rem;
+}
+
+.get-vaccinated-container .get-vaccinated-box-container .get-vaccinated-box-view .get-vaccinated-photo img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.get-vaccinated-container .get-vaccinated-box-container .get-vaccinated-box-view p
+{
+    width: 100%;
+    height: 10rem;
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border-radius: 0.3rem;
+    background: #007C7C;
+}
+
+.get-vaccinated-container .get-vaccinated-box-container .get-vaccinated-box-view a
+{
+    width: 100%;
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #333;
+    margin-top: 0.5rem;
+    transition: 0.5s ease-in-out;
+}
+
+.get-vaccinated-container .get-vaccinated-box-container .get-vaccinated-box-view a:hover
+{
+    text-decoration: underline;
+}
+
+.search-vaccination-center
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    margin: 1.5rem 0;
+    padding: 2.5rem 0;
+}
+
+.search-vaccination-center h5
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #007C7C;
+    gap: 0.5rem;
+    text-shadow: 0.15rem 0.15rem 0.15rem rgba(0, 0, 0, 0.3);
+}
+
+.search-vaccination-center p
+{
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #5A5A75;
+}
+
+.search-vaccination-center a
+{
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #02AEAE;
+    margin: 0.7rem 0;
+    text-transform: uppercase;
+    transition: 0.5s ease-in-out;
+}
+
+.search-vaccination-center a:hover
+{
+    text-decoration: underline;
+    transform: scale(1.15);
+}
+
+.search-vaccination-center .search-container-view
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 2.5rem;
+    gap: 1.5rem;
+    border-bottom: 0.15rem solid #CCC;
+}
+
+.search-vaccination-center .search-container-view button
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 10rem;
+    height: 100%;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: #959595;
+    gap: 0.3rem;
+    text-transform: uppercase;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    background: transparent;
+}
+
+.search-vaccination-center .search-container-view button.active-search-vaccination-button
+{
+    color: #02AEAE;
+    font-weight: 700;
+    border-bottom: 0.15rem solid #02AEAE;
+}
+
+.search-vaccination-center .search-container-view-content
+{
+    position: relative;
+    width: 70%;
+    height: auto;
+    padding: 1.5rem 0;
+}
+
+.search-vaccination-center .search-container-view-content .search-container-view-one,
+.search-vaccination-center .search-container-view-content .search-container-view-two
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    animation: show-search-conatiner-view 1.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+
+.search-vaccination-center .search-container-view-content .search-container-view-three
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    animation: show-search-conatiner-view 1.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+
+@keyframes show-search-conatiner-view
+{
+    0%
+    {
+        transform: translateX(5.5rem);
+    }
+}
+
+.search-vaccination-center .search-container-view-content .search-container-view-one
+{
+    display: flex;
+}
+
+.search-vaccination-center .search-container-view-content .search-container-view-two
+{
+    display: none;
+}
+
+.search-vaccination-center .search-container-view-content .search-container-view-three
+{
+    display: none;
+}
+
+.search-vaccination-center .search-container-view-content .search-container-view-one .search-state,
+.search-vaccination-center .search-container-view-content .search-container-view-one .search-district,
+.search-vaccination-center .search-container-view-content .search-container-view-two .search-pin
+{
+    position: relative;
+    width: 20rem;
+    height: 2.5rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #959595;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.3rem 0.7rem;
+    border: 0.05rem solid #CCC;
+    border-radius: 1.5rem;
+    cursor: pointer;
+}
+
+.search-vaccination-center .search-container-view-content .search-container-view-three .search-location
+{
+    position: relative;
+    width: 70%;
+    height: 2.5rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #959595;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.3rem 0.7rem;
+    border: 0.05rem solid #CCC;
+    border-radius: 1.5rem;
+    cursor: pointer;
+}
+
+.search-vaccination-center .search-container-view-content .search-container-view-two .search-pin input
+{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+}
+
+.search-vaccination-center .search-container-view-content .search-container-view-three .search-location input
+{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+}
+
+.search-vaccination-center .search-container-view-content .search-container-view-one .search-button,
+.search-vaccination-center .search-container-view-content .search-container-view-two .search-button
+{
+    width: 10rem;
+    height: 2.5rem;
+    font-size: 0.95rem;
+    font-weight: 700;
+    gap: 0.3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    background: #007C7C;
+    color: #FFF;
+    border-radius: 1.5rem;
+    filter: drop-shadow(0.15rem 0.15rem 0.15rem rgba(0, 0, 0, 0.35));
+    cursor: pointer;
+}
+
+.vaccination-info-content
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 10.5rem;
+}
+
+.vaccination-info-content:nth-child(odd)
+{
+    background: #EDFFFF;
+}
+
+.vaccination-info-content:nth-child(even)
+{
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.vaccination-info-content .vaccination-info
+{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.vaccination-info-content .vaccination-info h5
+{
+    font-size: 2.05rem;
+    font-weight: 700;
+    color: #007C7C;
+    text-shadow: 0.15rem 0.15rem 0.15rem rgba(0, 0, 0, 0.3);
+}
+
+.vaccination-info-content .vaccination-info p
+{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #5A5A75;
+}
+
+.vaccination-info-content .vaccination-info li
+{
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #5A5A75;
+}
+
+.vaccination-info-content .vaccination-info a
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15rem;
+    height: 2.5rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 0.5rem;
+    background: #007C7C;
+    color: #FFF;
+    border-radius: 1.5rem;
+    filter: drop-shadow(0.15rem 0.15rem 0.15rem rgba(0, 0, 0, 0.35));
+    cursor: pointer;
+}
+
+.vaccination-info-content .vaccincation-info-photo
+{
+    width: 50%;
+    height: 25rem;
+    object-fit: contain;
+}
+
+.vaccination-info-content .vaccincation-info-photo img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.abha-container
+{
+    width: 100%;
+    height: auto;
+    padding: 2.5rem;
+    margin: 1.5rem 0;
+    gap: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.abha-container h5
+{
+    
+    font-size: 2.05rem;
+    font-weight: 700;
+    color: #007C7C;
+    text-shadow: 0.15rem 0.15rem 0.15rem rgba(0, 0, 0, 0.3);
+}
+
+.abha-container p
+{
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #5A5A75;
+    text-align: center;
+}
+
+.abha-container .abha-container-content
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.abha-container .abha-container-content a
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30rem;
+    height: 15rem;
+    border-radius: 0.15rem;
+    background: #FFF;
+    padding: 0.5rem;
+    filter: drop-shadow(0.15rem 0.15rem 0.135rem rgba(0, 0, 0, 0.3));
+}
+
+.abha-container .abha-container-content a img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.3rem;
+    object-fit: cover;
+}
+
+.abha-container a
+{
+    width: 17rem;
+    height: 2.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 0.5rem;
+    background: #007C7C;
+    color: #FFF;
+    border-radius: 1.5rem;
+    filter: drop-shadow(0.15rem 0.15rem 0.15rem rgba(0, 0, 0, 0.35));
+    cursor: pointer;
+}
+
+.raise-an-issues-container
+{
+    width: 100%;
+    height: auto;
+    padding: 2.5rem;
+    gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5rem 0;
+    background: #007C7C;
+    filter: drop-shadow(0.15rem 0.15rem 0.15rem rgba(0, 0, 0, 0.5));
+}
+
+.raise-an-issues-container h5
+{
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #FFF;
+    text-transform: uppercase;
+    text-shadow: 0.15rem 0.15rem 0.15rem rgba(0, 0, 0, 0.3);
+}
+
+.raise-an-issues-container p
+{
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #FFF;
+}
+
+.issues-list-container
+{
+    position: relative;
+    width: 95%;
+    height: 15rem;
+    padding: 0.3rem;
+}
+
+.issues-list-container #scroll-left-issues
+{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-size: 1.5rem;
+    background: #007C7C;
+    border-radius: 0.15rem;
+    cursor: pointer;
+    z-index : 1;
+}
+
+.issues-list-container #scroll-right-issues
+{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-size: 1.5rem;
+    background: #007C7C;
+    border-radius: 0.15rem;
+    cursor: pointer;
+    z-index : 1;
+}
+
+.issues-list-container .issues-container-box-list
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.3rem;
+    gap: 1.5rem;
+    overflow-x: auto;
+}
+
+.issues-list-container .issues-container-box-list::-webkit-scrollbar
+{
+    width: 100%;
+    height: 0.5rem;
+}
+
+.issues-list-container .issues-container-box-list::-webkit-scrollbar-thumb
+{
+    border-radius: 0.5rem;
+    background: #FFF;
+}
+
+.issues-list-container .issues-container-box-list .issues-container-box-view
+{
+    flex: 0 0 auto;
+    width: 20rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.7rem 1.05rem;
+    background: #FFF;
+    border-radius: 0.5rem;
+    filter: drop-shadow(0.15rem 0.15rem 0.35rem rgba(0, 0, 0, 0.5));
+}
+
+.issues-list-container .issues-container-box-list .issues-container-box-view a
+{
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #007C7C;
+    margin-bottom: 1.5rem;
+    transition: 0.5s ease-in-out;
+}
+
+.issues-list-container .issues-container-box-list .issues-container-box-view a:hover
+{
+    text-decoration: underline;
+}
+
+.issues-list-container .issues-container-box-list .issues-container-box-view p
+{
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.fqa-container
+{
+    width: 100%;
+    height: auto;
+    padding: 2.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    margin: 1.5rem 0;
+}
+
+.fqa-container h5
+{
+    
+    font-size: 2.05rem;
+    font-weight: 700;
+    color: #007C7C;
+    text-shadow: 0.15rem 0.15rem 0.15rem rgba(0, 0, 0, 0.3);
+}
+
+.fqa-container .faq-view
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.fqa-container .faq-view .download-view
+{
+    width: 25%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1.5rem;
+}
+
+.fqa-container .faq-view .download-view a
+{
+    width: 85%;
+    height: 2.7rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    border: 0.10rem solid #007C7C;
+    border-radius: 1.5rem;
+    font-size: 0.95rem;
+    color: #007C7C;
+    font-weight: 700;
+}
+
+.fqa-container .faq-view .download-view a:hover
+{
+    text-decoration: underline;
+    box-shadow: 0rem 0rem 0.55rem #02AEAE;
+}
+
+.fqa-container .faq-view .download-view .faq-photo-view
+{
+    width: 100%;
+    height: 20rem;
+}
+
+.fqa-container .faq-view .download-view .faq-photo-view img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.fqa-container .faq-view .faq-container-view
+{
+    width: 65%;
+    height: 30rem;
+    padding: 0.15rem;
+    gap: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    background: #FFF;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    filter: drop-shadow(0rem 0.15rem 0.15rem rgba(0, 0, 0, 0.5));
+}
+
+.fqa-container .faq-view .faq-container-view h3
+{
+    width: 100%;
+    height: 3.15rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    color: #007C7C;
+    font-size: 0.95rem;
+    font-weight: 700;
+    background: #E9FFFF;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    border-bottom: 0.15rem solid #CCC;
+}
+
+.fqa-container .faq-view .faq-container-view .question-and-answer
+{
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+    gap: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    background: #F5F5F5;
+    border-radius: 1.5rem;
+}
+
+.fqa-container .faq-view .faq-container-view .question-and-answer::-webkit-scrollbar
+{
+    width: 0.5rem;
+    height: 100%;
+}
+
+.fqa-container .faq-view .faq-container-view .question-and-answer::-webkit-scrollbar-thumb
+{
+    border-radius: 0.5rem;
+    background: #333;
+}
+
+.fqa-container .faq-view .faq-container-view .question-and-answer .question-and-answer-view
+{
+    width: 100%;
+    height: auto;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    background: #F5F5F5;
+}
+
+.fqa-container .faq-view .faq-container-view .question-and-answer .question-and-answer-view .question-view
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.fqa-container .faq-view .faq-container-view .question-and-answer .question-and-answer-view .question-view p
+{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.fqa-container .faq-view .faq-container-view .question-and-answer .question-and-answer-view .question-view:hover p
+{
+    text-decoration: underline;
+}
+
+.fqa-container .faq-view .faq-container-view .question-and-answer .question-and-answer-view .question-view i
+{
+    font-size: 0.85rem;
+}
+
+.fqa-container .faq-view .faq-container-view .question-and-answer .question-and-answer-view .answer-view
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.3rem;
+    display: none;
+    animation: show-answer-view 1.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+
+@keyframes show-answer-view
+{
+    0%
+    {
+        transform: translateY(-0.5rem);
+    }
+}
+
+.fqa-container .faq-view .faq-container-view .question-and-answer .question-and-answer-view .answer-view.active-answer
+{
+    display: flex;
+}
+
+.fqa-container .faq-view .faq-container-view .question-and-answer .question-and-answer-view .answer-view p
+{
+    text-align: left;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #5A5A75;
+    margin: 0.3rem 0;
+}
+
+.fqa-container .faq-view .faq-container-view .question-and-answer .question-and-answer-view .answer-view .answer-photo-view
+{
+    width: 100%;
+    height: auto;
+}
+
+.fqa-container .faq-view .faq-container-view .question-and-answer .question-and-answer-view .answer-view .answer-photo-view img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.what-view-on-cowin-container
+{
+    width: 100%;
+    height: auto;
+    margin: 1.5rem 0;
+    padding: 2.5rem;
+    gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: #EDFFFF;
+}
+
+.what-view-on-cowin-container h5
+{
+    font-size: 2.05rem;
+    font-weight: 700;
+    color: #007C7C;
+    text-shadow: 0.15rem 0.15rem 0.15rem rgba(0, 0, 0, 0.3);
+}
+
+.what-view-on-cowin-container .new-cowin-content-container
+{
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.what-view-on-cowin-container .new-cowin-content-container .new-cowin-content-box
+{
+    width: 70%;
+    height: 100%;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: center;
+    overflow-y: auto;
+}
+
+.what-view-on-cowin-container .new-cowin-content-container .new-cowin-content-box::-webkit-scrollbar
+{
+    width: 0.5rem;
+    height: 100%;
+}
+
+.what-view-on-cowin-container .new-cowin-content-container .new-cowin-content-box::-webkit-scrollbar-thumb
+{
+    border-radius: 0.5rem;
+    background: #007C7C;
+}
+
+.what-view-on-cowin-container .new-cowin-content-container .new-cowin-content-box .new-cowin-box-view
+{
+    flex: 0 0 auto;
+    width: 45.5%;
+    height: auto;
+    max-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.3rem;
+    filter: drop-shadow(0rem 0.15rem 0.15rem rgba(0, 0, 0, 0.3));
+}
+
+.what-view-on-cowin-container .new-cowin-content-container .new-cowin-content-box .new-cowin-box-view i.fa-caret-down
+{
+    padding-bottom: 0.15rem;
+}
+
+.what-view-on-cowin-container .new-cowin-content-container .new-cowin-content-box .new-cowin-box-view .new-cowin-question-view
+{
+    width: 100%;
+    height: 4.5rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+.what-view-on-cowin-container .new-cowin-content-container .new-cowin-content-box .new-cowin-box-view .new-cowin-question-view .number-view
+{
+    position: relative;
+    width: 4.5rem;
+    height: 100%;
+    background: url(IMAGES/numbering.svg) no-repeat center;
+    background-size: contain;
+}
+
+.what-view-on-cowin-container .new-cowin-content-container .new-cowin-content-box .new-cowin-box-view .new-cowin-question-view .number-view.first-number-view
+{
+    position: relative;
+    width: 4.5rem;
+    height: 100%;
+    background: url(IMAGES/numbering_new.svg) no-repeat center;
+    background-size: contain;
+}
+
+.what-view-on-cowin-container .new-cowin-content-container .new-cowin-content-box .new-cowin-box-view .new-cowin-question-view .number-view span
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #FFF;
+    transform: translate(-70%, -20%);
+}
+
+.what-view-on-cowin-container .new-cowin-content-container .new-cowin-content-box .new-cowin-box-view .new-cowin-question-view p
+{
+    width: 100%;
+    height: 100%;
+    padding-top: 1.5rem;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #007C7C;
+    overflow-y: auto;
+}
+
+.what-view-on-cowin-container .new-cowin-content-container .new-cowin-content-box .new-cowin-box-view .new-cowin-question-view p::-webkit-scrollbar
+{
+    width: 0.5rem;
+    height: 100%;
+}
+
+.what-view-on-cowin-container .new-cowin-content-container .new-cowin-content-box .new-cowin-box-view .new-cowin-question-view p::-webkit-scrollbar-thumb
+{
+    border-radius: 0.5rem;
+    background: #CCC;
+}
+
+.what-view-on-cowin-container .new-cowin-content-container .new-cowin-content-box .new-cowin-box-view .new-cowin-question-view p.first-number-view-text
+{
+    width: 100%;
+    height: 100%;
+    padding-top: 1.5rem;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #FF9A31;
+    overflow-y: auto;
+}
+
+.what-view-on-cowin-container .new-cowin-content-container .new-cowin-content-box .new-cowin-box-view .new-cowin-answer-view
+{
+    width: 100%;
+    height: 7.5rem;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    display: none;
+    animation: show-new-cowin-answer 1.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+
+@keyframes show-new-cowin-answer
+{
+    0%
+    {
+        transform:translateY(-0.5rem);
+    }
+}
+
+.what-view-on-cowin-container .new-cowin-content-container .new-cowin-content-box .new-cowin-box-view .new-cowin-answer-view.active-new-cowin-answer
+{
+    display: flex;
+}
+
+.what-view-on-cowin-container .new-cowin-content-container .new-cowin-content-box .new-cowin-box-view .new-cowin-answer-view::-webkit-scrollbar
+{
+    width: 0.5rem;
+    height: 100%;
+}
+
+.what-view-on-cowin-container .new-cowin-content-container .new-cowin-content-box .new-cowin-box-view .new-cowin-answer-view::-webkit-scrollbar-thumb
+{
+    border-radius: 0.5rem;
+    background: #CCC;
+}
+
+.what-view-on-cowin-container .new-cowin-content-container .new-cowin-content-box .new-cowin-box-view .new-cowin-answer-view p
+{
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #5A5A75;
+    padding: 1.5rem 4.5rem;
+}
+
+.what-view-on-cowin-container .new-cowin-content-container .new-cowin-content-photo-view
+{
+    width: 20%;
+    height: 100%;
+}
+
+.what-view-on-cowin-container .new-cowin-content-container .new-cowin-content-photo-view img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.india-largest-vaccination
+{
+    width: 100%;
+    height: auto;
+    margin: 1.5rem 0;
+    padding: 2.5rem;
+    gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.india-largest-vaccination h5
+{
+    font-size: 2.05rem;
+    font-weight: 700;
+    color: #007C7C;
+    text-shadow: 0.15rem 0.15rem 0.15rem rgba(0, 0, 0, 0.3);
+}
+
+.india-largest-vaccination .vaccination-drive-container
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-info-container
+{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-info-container span
+{
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #02AEAE;
+    margin-bottom: 0.15rem;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-info-container p
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1.05rem;
+    gap: 0.5rem;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #FFF;
+    background: #007C7C;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    filter: drop-shadow(0.15rem 0.15rem 0.15rem rgba(0, 0, 0, 0.3));
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-info-container p label
+{
+    font-size: 0.75rem;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view
+{
+    position: relative;
+    width: 50%;
+    height: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .india-map-meter
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 75%;
+    left: 15%;
+    width: 7.55rem;
+    height: 7.55rem;
+    border-radius: 50%;
+    border: 0.15rem solid #02AEAE;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .india-map-meter span
+{
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #02AEAE;
+    padding-top: 0.3rem;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .india-map-meter .india-map-meter-two
+{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 5.55rem;
+    height: 5.55rem;
+    border-radius: 50%;
+    border: 0.15rem solid #02AEAE;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .india-map-meter .india-map-meter-three
+{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 3.55rem;
+    height: 3.55rem;
+    border-radius: 50%;
+    border: 0.15rem solid #02AEAE;
+}
+
+/* INDIA-MAP-VACCINATION-INFO */
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .ladakh-vaccination-info
+{
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    cursor: pointer;
+    z-index : 1;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .jammu-and-kashmir-vaccination-info
+{
+    position: absolute;
+    top: 17%;
+    left: 35.5%;
+    cursor: pointer;
+    z-index : 1;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .punjab-vaccination-info
+{
+    position: absolute;
+    top: 25%;
+    left: 35.95%;
+    cursor: pointer;
+    z-index : 1;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .himachal-pradesh-vaccination-info
+{
+    position: absolute;
+    top: 23%;
+    left: 40%;
+    cursor: pointer;
+    z-index : 1;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .uttarakhand-vaccination-info
+{
+    position: absolute;
+    top: 27.5%;
+    left: 43.5%;
+    cursor: pointer;
+    z-index : 1;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .chandigarh-vaccination-info
+{
+    position: absolute;
+    top: 27.5%;
+    left: 40%;
+    cursor: pointer;
+    z-index : 1;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .haryana-vaccination-info
+{
+    position: absolute;
+    top: 30%;
+    left: 37.5%;
+    cursor: pointer;
+    z-index : 1;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .delhi-vaccination-info
+{
+    position: absolute;
+    top: 33%;
+    left: 39%;
+    cursor: pointer;
+    z-index : 1;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .rajasthan-vaccination-info
+{
+    position: absolute;
+    top: 37%;
+    left: 33%;
+    cursor: pointer;
+    z-index : 1;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .uttar-pradesh-vaccination-info
+{
+    position: absolute;
+    top: 35.5%;
+    left: 45%;
+    cursor: pointer;
+    z-index : 1;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .bihar-vaccination-info
+{
+    position: absolute;
+    top: 40%;
+    left: 55%;
+    cursor: pointer;
+    z-index : 1;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .assam-vaccination-info
+{
+    position: absolute;
+    top: 40%;
+    left: 69%;
+    cursor: pointer;
+    z-index : 1;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .gujarat-vaccination-info
+{
+    position: absolute;
+    top: 47.5%;
+    left: 28.5%;
+    cursor: pointer;
+    z-index : 1;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .madhya-pradesh-vaccination-info
+{
+    position: absolute;
+    top: 48.5%;
+    left: 40%;
+    cursor: pointer;
+    z-index : 1;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .jharkhand-vaccination-info
+{
+    position: absolute;
+    top: 48.5%;
+    left: 53.5%;
+    cursor: pointer;
+    z-index : 1;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .west-bengal-vaccination-info
+{
+    position: absolute;
+    top: 48.5%;
+    left: 58.5%;
+    cursor: pointer;
+    z-index : 1;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .maharashtra-vaccination-info
+{
+    position: absolute;
+    top: 60%;
+    left: 35%;
+    cursor: pointer;
+    z-index : 1;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .chhattisgarh-vaccination-info
+{
+    position: absolute;
+    top: 53%;
+    left: 48.5%;
+    cursor: pointer;
+    z-index : 1;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .odisha-vaccination-info
+{
+    position: absolute;
+    top: 55.5%;
+    left: 53%;
+    cursor: pointer;
+    z-index : 1;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .telangana-vaccination-info
+{
+    position: absolute;
+    top: 63.5%;
+    left: 42.5%;
+    cursor: pointer;
+    z-index : 1;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .andhra-pradesh-vaccination-info
+{
+    position: absolute;
+    top: 67%;
+    left: 45%;
+    cursor: pointer;
+    z-index : 1;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .karnataka-vaccination-info
+{
+    position: absolute;
+    top: 73%;
+    left: 36%;
+    cursor: pointer;
+    z-index : 1;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .kerla-vaccination-info
+{
+    position: absolute;
+    top: 85.5%;
+    left: 37.5%;
+    cursor: pointer;
+    z-index : 1;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .tamil-nadu-vaccination-info
+{
+    position: absolute;
+    top: 83.5%;
+    left: 41%;
+    cursor: pointer;
+    z-index : 1;
+}
+
+/* INDIA-MAP-INFO (CIRCLE) */
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .ladakh-vaccination-info .circle
+{
+    position: relative;
+    width: 0.55rem;
+    height: 0.55rem;
+    border-radius: 50%;
+    border: 0.25rem solid #000;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .jammu-and-kashmir-vaccination-info .circle
+{
+    position: relative;
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    border: 0.25rem solid #000;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .punjab-vaccination-info .circle
+{
+    position: relative;
+    width: 1.05rem;
+    height: 1.05rem;
+    border-radius: 50%;
+    border: 0.25rem solid #000;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .himachal-pradesh-vaccination-info .circle
+{
+    position: relative;
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    border: 0.25rem solid #000;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .uttarakhand-vaccination-info .circle
+{
+    position: relative;
+    width: 0.65rem;
+    height: 0.65rem;
+    border-radius: 50%;
+    border: 0.25rem solid #000;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .chandigarh-vaccination-info .circle
+{
+    position: relative;
+    width: 0.15rem;
+    height: 0.15rem;
+    border-radius: 50%;
+    border: 0.25rem solid #000;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .haryana-vaccination-info .circle
+{
+    position: relative;
+    width: 1.05rem;
+    height: 1.05rem;
+    border-radius: 50%;
+    border: 0.25rem solid #000;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .delhi-vaccination-info .circle
+{
+    position: relative;
+    width: 0.85rem;
+    height: 0.85rem;
+    border-radius: 50%;
+    border: 0.25rem solid #000;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .rajasthan-vaccination-info .circle
+{
+    position: relative;
+    width: 1.55rem;
+    height: 1.55rem;
+    border-radius: 50%;
+    border: 0.25rem solid #000;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .uttar-pradesh-vaccination-info .circle
+{
+    position: relative;
+    width: 2.55rem;
+    height: 2.55rem;
+    border-radius: 50%;
+    border: 0.25rem solid #000;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .bihar-vaccination-info .circle
+{
+    position: relative;
+    width: 1.55rem;
+    height: 1.55rem;
+    border-radius: 50%;
+    border: 0.25rem solid #000;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .assam-vaccination-info .circle
+{
+    position: relative;
+    width: 1.15rem;
+    height: 1.15rem;
+    border-radius: 50%;
+    border: 0.25rem solid #000;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .gujarat-vaccination-info .circle
+{
+    position: relative;
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 50%;
+    border: 0.25rem solid #000;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .madhya-pradesh-vaccination-info .circle
+{
+    position: relative;
+    width: 1.55rem;
+    height: 1.55rem;
+    border-radius: 50%;
+    border: 0.25rem solid #000;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .jharkhand-vaccination-info .circle
+{
+    position: relative;
+    width: 1.05rem;
+    height: 1.05rem;
+    border-radius: 50%;
+    border: 0.25rem solid #000;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .west-bengal-vaccination-info .circle
+{
+    position: relative;
+    width: 1.55rem;
+    height: 1.55rem;
+    border-radius: 50%;
+    border: 0.25rem solid #000;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .maharashtra-vaccination-info .circle
+{
+    position: relative;
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 50%;
+    border: 0.25rem solid #000;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .chhattisgarh-vaccination-info .circle
+{
+    position: relative;
+    width: 1.05rem;
+    height: 1.05rem;
+    border-radius: 50%;
+    border: 0.25rem solid #000;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .odisha-vaccination-info .circle
+{
+    position: relative;
+    width: 1.35rem;
+    height: 1.35rem;
+    border-radius: 50%;
+    border: 0.25rem solid #000;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .telangana-vaccination-info .circle
+{
+    position: relative;
+    width: 1.15rem;
+    height: 1.15rem;
+    border-radius: 50%;
+    border: 0.25rem solid #000;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .andhra-pradesh-vaccination-info .circle
+{
+    position: relative;
+    width: 1.35rem;
+    height: 1.35rem;
+    border-radius: 50%;
+    border: 0.25rem solid #000;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .karnataka-vaccination-info .circle
+{
+    position: relative;
+    width: 1.35rem;
+    height: 1.35rem;
+    border-radius: 50%;
+    border: 0.25rem solid #000;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .kerla-vaccination-info .circle
+{
+    position: relative;
+    width: 1.15rem;
+    height: 1.15rem;
+    border-radius: 50%;
+    border: 0.25rem solid #000;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .tamil-nadu-vaccination-info .circle
+{
+    position: relative;
+    width: 1.55rem;
+    height: 1.55rem;
+    border-radius: 50%;
+    border: 0.25rem solid #000;
+}
+
+/* VACCINATION-STATE-INFO */
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .ladakh-vaccination-info .circle:hover .circle-info
+{
+    display: flex;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .jammu-and-kashmir-vaccination-info .circle:hover .circle-info
+{
+    display: flex;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .punjab-vaccination-info .circle:hover .circle-info
+{
+    display: flex;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .himachal-pradesh-vaccination-info .circle:hover .circle-info
+{
+    display: flex;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .uttarakhand-vaccination-info .circle:hover .circle-info
+{
+    display: flex;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .chandigarh-vaccination-info .circle:hover .circle-info
+{
+    display: flex;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .haryana-vaccination-info .circle:hover .circle-info
+{
+    display: flex;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .delhi-vaccination-info .circle:hover .circle-info
+{
+    display: flex;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .rajasthan-vaccination-info .circle:hover .circle-info
+{
+    display: flex;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .uttar-pradesh-vaccination-info .circle:hover .circle-info
+{
+    display: flex;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .bihar-vaccination-info .circle:hover .circle-info
+{
+    display: flex;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .assam-vaccination-info .circle:hover .circle-info
+{
+    display: flex;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .gujarat-vaccination-info .circle:hover .circle-info
+{
+    display: flex;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .madhya-pradesh-vaccination-info .circle:hover .circle-info
+{
+    display: flex;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .jharkhand-vaccination-info .circle:hover .circle-info
+{
+    display: flex;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .west-bengal-vaccination-info .circle:hover .circle-info
+{
+    display: flex;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .maharashtra-vaccination-info .circle:hover .circle-info
+{
+    display: flex;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .chhattisgarh-vaccination-info .circle:hover .circle-info
+{
+    display: flex;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .odisha-vaccination-info .circle:hover .circle-info
+{
+    display: flex;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .telangana-vaccination-info .circle:hover .circle-info
+{
+    display: flex;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .andhra-pradesh-vaccination-info .circle:hover .circle-info
+{
+    display: flex;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .karnataka-vaccination-info .circle:hover .circle-info
+{
+    display: flex;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .kerla-vaccination-info .circle:hover .circle-info
+{
+    display: flex;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .tamil-nadu-vaccination-info .circle:hover .circle-info
+{
+    display: flex;
+}
+
+/* INDIA-MAP-STATE-INFO */
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .ladakh-vaccination-info .circle .circle-info,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .jammu-and-kashmir-vaccination-info .circle .circle-info,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .punjab-vaccination-info .circle .circle-info,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .himachal-pradesh-vaccination-info .circle .circle-info,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .uttarakhand-vaccination-info .circle .circle-info,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .chandigarh-vaccination-info .circle .circle-info,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .haryana-vaccination-info .circle .circle-info,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .delhi-vaccination-info .circle .circle-info,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .rajasthan-vaccination-info .circle .circle-info,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .uttar-pradesh-vaccination-info .circle .circle-info,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .bihar-vaccination-info .circle .circle-info,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .assam-vaccination-info .circle .circle-info,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .gujarat-vaccination-info .circle .circle-info,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .madhya-pradesh-vaccination-info .circle .circle-info,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .jharkhand-vaccination-info .circle .circle-info,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .west-bengal-vaccination-info .circle .circle-info,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .maharashtra-vaccination-info .circle .circle-info,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .chhattisgarh-vaccination-info .circle .circle-info,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .odisha-vaccination-info .circle .circle-info,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .telangana-vaccination-info .circle .circle-info,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .andhra-pradesh-vaccination-info .circle .circle-info,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .karnataka-vaccination-info .circle .circle-info,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .kerla-vaccination-info .circle .circle-info,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .tamil-nadu-vaccination-info .circle .circle-info
+{
+    position: absolute;
+    bottom: 0;
+    left: 130%;
+    display: flex;
+    flex-direction: column;
+    width: 15.5rem;
+    height: auto;
+    background: #F5F5F5;
+    padding: 0.5rem;
+    gap: 0.3rem;
+    border-radius: 0.3rem;
+    box-shadow: 0rem 0rem 0.35rem rgba(0, 0, 0, 0.3);
+    border: 0.05rem solid #333;
+    display: none;
+    animation: show-vaccination-info-view 1.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+
+@keyframes show-vaccination-info-view
+{
+    0%
+    {
+        transform: translateX(-0.5rem);
+    }
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .ladakh-vaccination-info .circle .circle-info p,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .jammu-and-kashmir-vaccination-info .circle .circle-info p,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .punjab-vaccination-info .circle .circle-info p,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .himachal-pradesh-vaccination-info .circle .circle-info p,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .uttarakhand-vaccination-info .circle .circle-info p,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .chandigarh-vaccination-info .circle .circle-info p,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .haryana-vaccination-info .circle .circle-info p,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .delhi-vaccination-info .circle .circle-info p,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .rajasthan-vaccination-info .circle .circle-info p,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .uttar-pradesh-vaccination-info .circle .circle-info p,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .bihar-vaccination-info .circle .circle-info p,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .assam-vaccination-info .circle .circle-info p,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .gujarat-vaccination-info .circle .circle-info p,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .madhya-pradesh-vaccination-info .circle .circle-info p,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .jharkhand-vaccination-info .circle .circle-info p,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .west-bengal-vaccination-info .circle .circle-info p,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .maharashtra-vaccination-info .circle .circle-info p,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .chhattisgarh-vaccination-info .circle .circle-info p,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .odisha-vaccination-info .circle .circle-info p,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .telangana-vaccination-info .circle .circle-info p,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .andhra-pradesh-vaccination-info .circle .circle-info p,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .karnataka-vaccination-info .circle .circle-info p,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .kerla-vaccination-info .circle .circle-info p,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .tamil-nadu-vaccination-info .circle .circle-info p
+{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .ladakh-vaccination-info .circle .circle-info span,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .jammu-and-kashmir-vaccination-info .circle .circle-info span,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .punjab-vaccination-info .circle .circle-info span,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .himachal-pradesh-vaccination-info .circle .circle-info span,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .uttarakhand-vaccination-info .circle .circle-info span,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .chandigarh-vaccination-info .circle .circle-info span,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .haryana-vaccination-info .circle .circle-info span,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .delhi-vaccination-info .circle .circle-info span,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .rajasthan-vaccination-info .circle .circle-info span,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .uttar-pradesh-vaccination-info .circle .circle-info span,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .bihar-vaccination-info .circle .circle-info span,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .assam-vaccination-info .circle .circle-info span,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .gujarat-vaccination-info .circle .circle-info span,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .madhya-pradesh-vaccination-info .circle .circle-info span,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .jharkhand-vaccination-info .circle .circle-info span,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .west-bengal-vaccination-info .circle .circle-info span,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .maharashtra-vaccination-info .circle .circle-info span,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .chhattisgarh-vaccination-info .circle .circle-info span,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .odisha-vaccination-info .circle .circle-info span,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .telangana-vaccination-info .circle .circle-info span,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .andhra-pradesh-vaccination-info .circle .circle-info span,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .karnataka-vaccination-info .circle .circle-info span,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .kerla-vaccination-info .circle .circle-info span,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .tamil-nadu-vaccination-info .circle .circle-info span
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 0.85rem;
+    font-size: 500;
+    gap: 0.3rem;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .ladakh-vaccination-info .circle .circle-info span label,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .jammu-and-kashmir-vaccination-info .circle .circle-info span label,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .punjab-vaccination-info .circle .circle-info span label,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .himachal-pradesh-vaccination-info .circle .circle-info span label,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .uttarakhand-vaccination-info .circle .circle-info span label,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .chandigarh-vaccination-info .circle .circle-info span label,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .haryana-vaccination-info .circle .circle-info span label,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .delhi-vaccination-info .circle .circle-info span label,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .rajasthan-vaccination-info .circle .circle-info span label,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .uttar-pradesh-vaccination-info .circle .circle-info span label,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .bihar-vaccination-info .circle .circle-info span label,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .assam-vaccination-info .circle .circle-info span label,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .gujarat-vaccination-info .circle .circle-info span label,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .madhya-pradesh-vaccination-info .circle .circle-info span label,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .jharkhand-vaccination-info .circle .circle-info span label,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .west-bengal-vaccination-info .circle .circle-info span label,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .maharashtra-vaccination-info .circle .circle-info span label,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .chhattisgarh-vaccination-info .circle .circle-info span label,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .odisha-vaccination-info .circle .circle-info span label,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .telangana-vaccination-info .circle .circle-info span label,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .andhra-pradesh-vaccination-info .circle .circle-info span label,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .karnataka-vaccination-info .circle .circle-info span label,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .kerla-vaccination-info .circle .circle-info span label,
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view .tamil-nadu-vaccination-info .circle .circle-info span label
+{
+    font-weight: 700;
+}
+
+.india-largest-vaccination .vaccination-drive-container .vaccination-drive-map-view img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.india-largest-vaccination .vaccination-drive-container .download-vaccination-drive-view
+{
+    width: 20%;
+    height: auto;
+}
+
+.india-largest-vaccination .vaccination-drive-container .download-vaccination-drive-view a
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0.7rem 1.15rem;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #007C7C;
+    border: 0.15rem solid #007C7C;
+    border-radius: 1.5rem;
+}
+
+.india-largest-vaccination .vaccination-drive-container .download-vaccination-drive-view a:hover
+{
+    text-decoration: underline;
+    box-shadow: 0rem 0rem 0.55rem #02AEAE;
+}
+
+.our-partners
+{
+    width: 100%;
+    height: auto;
+    padding: 2.5rem;
+    margin-top: 1.5rem;
+    gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #EDFFFF;
+}
+
+.our-partners h5
+{
+    font-size: 2.05rem;
+    font-weight: 700;
+    color: #007C7C;
+    text-shadow: 0.15rem 0.15rem 0.15rem rgba(0, 0, 0, 0.3);
+}
+
+.our-partners .partners-view
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.our-partners .partners-view .partner-photo-view
+{
+    width: 20%;
+    height: 30%;
+}
+
+.our-partners .partners-view .partner-photo-view img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.our-partners .partners-view .partners-photos-view
+{
+    width: 70%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.our-partners .partners-view .partners-photos-view .partner-photo-list-view
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.our-partners .partners-view .partners-photos-view .partner-photo-list-view button
+{
+    width: 13.55rem;
+    height: 4.55rem;
+    padding: 1.15rem 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0rem 0rem 0.55rem rgba(0, 0, 0, 0.5);
+    background: #FFF;
+    cursor: pointer;
+}
+
+.our-partners .partners-view .partners-photos-view .partner-photo-list-view button img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.our-partners .partners-view .partners-photos-view .partner-button-view
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.our-partners .partners-view .partners-photos-view .partner-button-view a
+{
+    width: 15rem;
+    height: auto;
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 0.55rem 1.5rem;
+    border-radius: 1.5rem;
+}
+
+.our-partners .partners-view .partners-photos-view .partner-button-view a:nth-child(odd)
+{
+    color: #FFF;
+    background: #007C7C;
+}
+
+.our-partners .partners-view .partners-photos-view .partner-button-view a:nth-child(even)
+{
+    border: 0.15rem solid #007C7C;
+    color: #007C7C;
+    background: transparent;
+}
+
+footer
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .sub-footer
+{
+    width: 100%;
+    height: auto;
+    padding: 1.5rem;
+    gap: 5.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: #007C7C;
+}
+
+footer .sub-footer .sub-footer-content
+{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer .sub-footer .sub-footer-content .footer-content
+{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .sub-footer .sub-footer-content .footer-content h5
+{
+    position: relative;
+    padding: 0.5rem 0;
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-bottom: 1.15rem;
+    text-transform: uppercase;
+    color: #99D9D9;
+}
+
+footer .sub-footer .sub-footer-content .footer-content h5::after
+{
+    position: absolute;
+    content: "";
+    width: 1.5rem;
+    height: auto;
+    bottom: 0;
+    left: 0;
+    border-bottom: 0.35rem solid #99D9D9;
+}
+
+footer .sub-footer .sub-footer-content .footer-content a
+{
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #FFF;
+    margin: 0.5rem 0;
+}
+
+footer .sub-footer .sub-footer-content .footer-content a:hover
+{
+    text-decoration: underline;
+}
+
+footer .sub-footer .sub-footer-sub-content
+{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .sub-footer .sub-footer-sub-content .sub-footer-content-view
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer .sub-footer .sub-footer-sub-content .sub-footer-content-view .footer-content
+{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .sub-footer .sub-footer-sub-content .sub-footer-content-view .footer-content h5
+{
+    position: relative;
+    padding: 0.5rem 0;
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-bottom: 1.15rem;
+    text-transform: uppercase;
+    color: #99D9D9;
+}
+
+footer .sub-footer .sub-footer-sub-content .sub-footer-content-view .footer-content h5::after
+{
+    position: absolute;
+    content: "";
+    width: 1.5rem;
+    height: auto;
+    bottom: 0;
+    left: 0;
+    border-bottom: 0.35rem solid #99D9D9;
+}
+
+footer .sub-footer .sub-footer-sub-content .sub-footer-content-view .footer-content a
+{
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #FFF;
+    margin: 0.5rem 0;
+}
+
+footer .sub-footer .sub-footer-sub-content .sub-footer-content-view .footer-content a:hover
+{
+    text-decoration: underline;
+}
+
+footer .sub-footer .sub-footer-sub-content .border-view
+{
+    width: 100%;
+    margin: 0.5rem 0;
+    border-top: 0.05rem solid rgba(0, 0, 0, 0.15);
+}
+
+footer .sub-footer-container
+{
+    width: 100%;
+    height: 5rem;
+    padding: 1.15rem 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: #015158;
+}
+
+footer .sub-footer-container p
+{
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #FFF;
+}
+
+footer .sub-footer-container .sub-footer-photos
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+footer .sub-footer-container .sub-footer-photos a
+{
+    width: 5rem;
+    height: 3.7rem;
+}
+
+footer .sub-footer-container .sub-footer-photos a img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+footer .sub-footer-container .term-and-privacy
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+footer .sub-footer-container .term-and-privacy a
+{
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #FFF;
+}
+
+footer .sub-footer-container .term-and-privacy span
+{
+    width: auto;
+    height: 1.5rem;
+    border-left: 0.05rem solid #FFF;
+}
+
+footer .sub-footer-container .term-and-privacy a:hover
+{
+    text-decoration: underline;
+}
+
+.support-for-covid-container .support-container
+{
+    position: fixed;
+    width: auto;
+    height: auto;
+    top: 50%;
+    right: 0;
+    padding: 0.5rem 1.15rem;
+    transform: translate(0, -50%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #FFF;
+    background: linear-gradient(90deg,#017E7E 70%,#0C6161);
+    border-top-left-radius: 1.7rem;
+    border-bottom-left-radius: 1.7rem;
+    box-shadow: 0.15rem 0.15rem 0.35rem rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+}
+
+.support-for-covid-container .support-container i
+{
+    font-size: 1.15rem;
+}
+
+.support-for-covid-container .support-container .support-number-container
+{
+    position: absolute;
+    top: 110%;
+    right: 5.5%;
+    width: 15rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0.7rem 0;
+    background: #EDFFFF;
+    border-radius: 1.5rem;
+    box-shadow: 0.15rem 0.15rem 0.35rem rgba(0, 0, 0, 0.15);
+    z-index: 1;
+    display: none;
+    animation: show-support-container 1.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+
+@keyframes show-support-container
+{
+    0%
+    {
+        transform: translateY(-0.5rem);
+    }
+}
+
+.support-for-covid-container .support-container .support-number-container.active-support-container
+{
+    display: flex;
+}
+
+.support-for-covid-container .support-container .support-number-container span
+{
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #015158;
+    padding: 0 1.15rem;
+}
+
+.support-for-covid-container .support-container .support-number-container a
+{
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #333;
+    padding: 0 1.15rem;
+}
+
+.support-for-covid-container .support-container .support-number-container a:hover
+{
+    text-decoration: underline;
+}
+
+.support-for-covid-container .support-container .support-number-container .border-view
+{
+    width: 100%;
+    margin: 0.5rem 0;
+    border-top: 0.05rem solid rgba(0, 0, 0, 0.15);
+}

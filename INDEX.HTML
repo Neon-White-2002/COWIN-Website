@@ -1,0 +1,1737 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>CoWIN</title>
+
+        <!-- PAGE-LOGO -->
+        <link rel="icon" href="IMAGES/cowin-logo.png" type="img/icon">
+
+        <!-- STYLE-SHEET -->
+        <link rel="stylesheet" href="STYLE.CSS">
+
+        <!-- FONT - AWESOME -->
+        <script src="https://kit.fontawesome.com/4712b32a59.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <a href="">
+                <div class="minister-logo">
+                    <img src="IMAGES/emblem-gov.svg" alt="">
+                </div>
+                <span>Minister of Health & Family Well-Fare</span>
+            </a>
+
+            <div class="header-sub-content">
+                <div class="font-size-button">
+                    <button>A+</button>
+
+                    <button class="active-font-size-button">A</button>
+
+                    <button>A-</button>
+                </div>
+
+                <div class="language" id="language">
+                    <p id="current-lang">English (CoWIN)</p>
+                    <i class="fa-solid fa-caret-down"></i>
+
+                    <div class="language-option" id="language-option">
+                        <ul>
+                            <li class="active-language">English</li>
+
+                            <li>हिंदी (Hindi)</li>
+
+                            <li>मराठी (Marathi)</li>
+
+                            <li>മലയാളം (Malayalam)</li>
+
+                            <li>ਪੰਜਾਬੀ (Punjabi)</li>
+
+                            <li>తెలుగు (Telugu)</li>
+
+                            <li>ગુજરાતી (Gujarati)</li>
+
+                            <li>ಕನ್ನಡ (Kannada)</li>
+
+                            <li>தமிழ் (Tamil)</li>
+
+                            <li>ଓଡିଆ (Odia)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <nav>
+            <a href="">
+                <img src="IMAGES/covid-19.svg" alt="">
+            </a>
+
+            <div class="nav-sub-content">
+                <a href="">ABHA (Health ID)</a>
+
+                <a href="">Dashboard</a>
+
+                <a href="">Verify Certificate</a>
+
+                <a href="">FAQ (Frequently Asked Question)</a>
+
+                <a href="">Partner's</a>
+
+                <a href="">Register / Sign In</a>
+            </div>
+        </nav>
+
+        <div class="cowin-advertise-conatiner">
+            <div class="advertise-content">
+                <h3>Historic & Unparalleled Achievement !</h3>
+                <h3>India's Glorious Jounery of :</h3>
+
+                <div class="vaccination-records">
+                    <img src="IMAGES/verified.svg" alt="">
+                    <span>200 CRORE'S VACCINATION'S</span>
+                </div>
+
+                <h5>"India is set to defeat COVID-19. Every INDIAN, is making it possible."</h5>
+                <p>- PM Narendra Modi</p>
+            </div>
+
+            <div class="advertise-cowin-photo">
+                <img src="IMAGES/independance.svg" alt="">
+            </div>
+        </div>
+
+        <div class="vaccination-records-container-view">
+            <div class="total-vaccination-container">
+                <p>Total Vaccination Doses</p>
+                <span id="total-vaccination-text">2,00,00,00,000</span>
+            </div>
+
+            <a href="">VIEW MORE</a>
+
+            <div class="today-vaccination-container">
+                <p>Vaccination Done Today</p>
+                <span id="today-vaccination-text">000</span>
+            </div>
+        </div>
+
+        <div class="get-vaccinated-container">
+            <h5>
+                <i class="fa-solid fa-hand-point-up fa-rotate-90 fa-beat"></i>
+                Get Vaccinated in Three (3) Easy Step's :
+            </h5>
+
+            <div class="get-vaccinated-box-container">
+                <div class="get-vaccinated-box-view">
+                    <div class="step-box-view">STEP-1</div>
+
+                    <div class="get-vaccinated-photo">
+                        <img src="IMAGES/setp-one-box.svg" alt="">
+                    </div>
+
+                    <p>Book an Appointment on Co-WIN or Walk into any Vaccination Center</p>
+
+                    <a href="">How to Book an Appointment on Co-WIN ?</a>
+                </div>
+
+                <i class="fa-solid fa-angle-right"></i>
+
+                <div class="get-vaccinated-box-view">
+                    <div class="step-box-view">STEP-2</div>
+
+                    <div class="get-vaccinated-photo">
+                        <img src="IMAGES/step-two-box.svg" alt="">
+                    </div>
+
+                    <p>Get Your Vaccination Safely at the Time on Your Appointment</p>
+
+                    <a href="">Do's and Don't For Getting Vaccinated !</a>
+                </div>
+
+                <i class="fa-solid fa-angle-right"></i>
+
+                <div class="get-vaccinated-box-view">
+                    <div class="step-box-view">STEP-3</div>
+
+                    <div class="get-vaccinated-photo">
+                        <img src="IMAGES/step-three-box.svg" alt="">
+                    </div>
+
+                    <p>Download Your Vaccination Certification's from Co-WIN & Wait for Dose #2</p>
+
+                    <a href="">Download Your Vaccination Certificate !</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="search-vaccination-center">
+            <h5>
+                <i class="fa-solid fa-magnifying-glass fa-beat"></i>
+                Search Your Nearest Vaccination Center
+            </h5>
+
+            <p>Get a pre-view list of the nearest center's & check availability of vaccination slot's</p>
+
+            <a href="">
+                <i class="fa-solid fa-right-to-bracket"></i>
+                Login to Book Your Slot's
+            </a>
+
+            <div class="search-container-view">
+                <button class="active-search-vaccination-button" id="search-container-one">
+                    <i class="fa-solid fa-globe"></i>
+                    By District
+                </button>
+
+                <button id="search-container-two">
+                    <i class="fa-solid fa-map-pin"></i>
+                    By PIN
+                </button>
+
+                <button id="search-container-three">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    On The Map
+                </button>
+            </div>
+
+            <div class="search-container-view-content">
+                <div class="search-container-view-one" id="search-container-view-one">
+                    <div class="search-state">
+                        <span>Select State</span>
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+
+                    <div class="search-district">
+                        <span>Select District</span>
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+
+                    <div class="search-button">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <span>Search</span>
+                    </div>
+                </div>
+
+                <div class="search-container-view-two" id="search-container-view-two">
+                    <div class="search-pin">
+                        <input type="number" name="" id="" placeholder="Enter Your PIN">
+                        <i class="fa-solid fa-location-crosshairs"></i>
+                    </div>
+
+                    <div class="search-button">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <span>Search</span>
+                    </div>
+                </div>
+
+                <div class="search-container-view-three" id="search-container-view-three">
+                    <div class="search-location">
+                        <input type="text" name="" id="" placeholder="Search Your Nearest Location">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="vaccination-info-content">
+            <div class="vaccination-info">
+                <h5>
+                    <i class="fa-solid fa-hand-point-up fa-beat fa-rotate-90"></i>
+                    Free COVID Precaution Dose
+                </h5>
+
+                <p>- Now Precaution dose for 18-59 age group free at Government Vaccination Center.</p>
+
+                <a href="">Book Your Slot</a>
+            </div>
+
+            <div class="vaccincation-info-photo">
+                <img src="IMAGES/free_covid_precaution_dose.svg" alt="">
+            </div>
+        </div>
+
+        <div class="vaccination-info-content">
+            <div class="vaccincation-info-photo">
+                <img src="IMAGES/reports-side-effect.svg" alt="">
+            </div>
+
+            <div class="vaccination-info">
+                <h5>
+                    <i class="fa-solid fa-hand-point-up fa-beat fa-rotate-90"></i>
+                    Report Side Effect
+                </h5>
+
+                <p>- If you have experienced any side effect after COVID-19 vaccination, it can be reported on Co-WIN using
+                    your registered mobile number.</p>
+
+                <a href="">Report Now</a>
+            </div>
+        </div>
+
+        <div class="vaccination-info-content">
+            <div class="vaccination-info">
+                <h5>
+                    <i class="fa-solid fa-hand-point-up fa-beat fa-rotate-90"></i>
+                    Children Vaccination
+                </h5>
+
+                <p>
+                    <li>
+                        Covovax vaccine is now available for Children of the age group 12+ yrs in Private Vaccination
+                        Center. The time span between first and second dose of Covovax is 21 days. Children can be
+                        administered with the second dose of Covovax within a month.
+                    </li>
+
+                    <li>
+                        Children of the age group 12-14 yrs are now eligible for the Corbevax vaccine in Government
+                        Vaccination Center and in Private Vaccination Center 12+ yrs. The period between a first and second
+                        dose of Corbevax is 28 days.
+                    </li>
+
+                    <li>
+                        Covaxin is available for Children of the age group of 15+ yrs in both Government and Private
+                        Vaccination Center. Children must be completed 4 to 6 weeks after administration of the first dose
+                        of Covaxin to take the second dose of Covaxin. Both online and walk-in are available.
+                    </li>
+                </p>
+
+                <a href="">Book Your Slot</a>
+            </div>
+
+            <div class="vaccincation-info-photo">
+                <img src="IMAGES/Children_Vaccination.svg" alt="">
+            </div>
+        </div>
+
+        <div class="vaccination-info-content">
+            <div class="vaccincation-info-photo">
+                <img src="IMAGES/Date_Correction.svg" alt="">
+            </div>
+
+            <div class="vaccination-info">
+                <h5>
+                    <i class="fa-solid fa-hand-point-up fa-beat fa-rotate-90"></i>
+                    Vaccination Date Correction
+                </h5>
+
+                <p>- If the date printed on your vaccination certificate differs from the actual date of vaccine
+                    administration, you may raise a request for correction of the same by submitting a valid proof of
+                    correct vaccination date.</p>
+
+                <a href="">Update Date</a>
+            </div>
+        </div>
+
+        <div class="vaccination-info-content">
+            <div class="vaccination-info">
+                <h5>
+                    <i class="fa-solid fa-hand-point-up fa-beat fa-rotate-90"></i>
+                    Precaution Dose
+                </h5>
+
+                <p>
+                    <li>
+                        All fully vaccinated adult citizens (18+ and have taken 2 doses) are eligible for precaution dose
+                        from 10/04/2022. Eligible citizens can avail precaution dose at any Government or Private
+                        Vaccination Center. Citizens should carry their Final Certificate of vaccination (with details of
+                        both earlier doses). Citizens should use the same mobile number and ID card used for earlier doses.
+                    </li>
+
+                    <li>
+                        HCWs, FLWs and Citizens aged 60 year or more, shall continue to receive precaution dose vaccination
+                        at any CVC, including free of charge vaccination at Government Vaccination Center.
+                    </li>
+
+                    <li>
+                        For international travel, precaution dose can be administered to such beneficiary less than 9 months
+                        to at a minimum interval of 3 months (90 days) from the date of administration of the second dose as
+                        recorded on Co-WlN as per requirement of the destination country. All Vaccination Center in the
+                        State where precaution dose is being administered are eligible to administer precaution dose.
+                    </li>
+                </p>
+
+                <a href="">Book Your Slot</a>
+            </div>
+
+            <div class="vaccincation-info-photo">
+                <img src="IMAGES/Precaution_dose.svg" alt="">
+            </div>
+        </div>
+
+        <div class="vaccination-info-content">
+            <div class="vaccincation-info-photo">
+                <img src="IMAGES/share_illustration.svg" alt="">
+            </div>
+
+            <div class="vaccination-info">
+                <h5>
+                    <i class="fa-solid fa-hand-point-up fa-beat fa-rotate-90"></i>
+                    Share Your Vaccination Status
+                </h5>
+
+                <p>- Be a Fighter! If you are fully or partially vaccinated, you can now share your vaccination status in
+                    your social circle. Let's encourage our friends and followers in joining India's battle against
+                    COVID-19.</p>
+
+                <a href="">Share Your Status</a>
+            </div>
+        </div>
+
+        <div class="abha-container">
+            <h5>
+                <i class="fa-solid fa-hand-point-up fa-beat fa-rotate-90"></i>
+                ABHA (Health ID) & it's Benefit's
+            </h5>
+
+            <p>ABHA (earlier known as Health ID) is an acronym for Ayushman Bharat Health Account. Using ABHA (Health ID) is
+                the first step towards creating safer and efficient digital health records for you and your family. It
+                enables your interaction with participating healthcare providers, and allows you to receive your digital lab
+                reports, prescriptions and diagnosis seamlessly from verified healthcare professionals and health service
+                providers.</p>
+
+            <div class="abha-container-content">
+                <a href="">
+                    <img src="IMAGES/abha-preview.jpg" alt="">
+                </a>
+
+                <a href="">
+                    <img src="IMAGES/abha-preview-benefits.jpg" alt="">
+                </a>
+            </div>
+
+            <a href="">Click Here to Know More</a>
+        </div>
+
+        <div class="raise-an-issues-container">
+            <h5>
+                <i class="fa-solid fa-hand-point-up fa-beat"></i>
+                Raise An Issue's
+            </h5>
+
+            <p>Raise an issue or get solutions to your Co-WIN account and vaccination certificate related issues instantly.
+            </p>
+
+            <div class="issues-list-container">
+                <div id="scroll-left-issues">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </div>
+
+                <div id="scroll-right-issues">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+
+                <div class="issues-container-box-list" id="issues-container-box-list">
+                    <div class="issues-container-box-view">
+                        <a href="">Vaccination Date Correction's</a>
+
+                        <p>If your vaccination certificate is showing an incorrect date, you can raise an issue using
+                            “Vaccination Date Correction”.</p>
+                    </div>
+
+                    <div class="issues-container-box-view">
+                        <a href="">Certificate Correction's</a>
+
+                        <p>If your vaccination certificate is showing incorrect name, gender, birth year or ID details, you
+                            can raise an issue using “Certificate Correction”. Using this you can correct any two fields at
+                            a time on the vaccination certificate.</p>
+                    </div>
+
+                    <div class="issues-container-box-view">
+                        <a href="">Merge Certificate's</a>
+
+                        <p>In case you have multiple certificates of Dose 1 generated from different accounts, you can merge
+                            them into the final vaccination certificate.</p>
+                    </div>
+
+                    <div class="issues-container-box-view">
+                        <a href="">Add Passport's</a>
+
+                        <p>You can link your passport to your vaccination certificate. By adding a passport to your
+                            vaccination certificate you can submit a request and get an international travel certificate.
+                        </p>
+                    </div>
+
+                    <div class="issues-container-box-view">
+                        <a href="">Report Unknown Member's</a>
+
+                        <p>If there are any unknown members are associated with your account, you can remove them from your
+                            account by reporting unknown members.</p>
+                    </div>
+
+                    <div class="issues-container-box-view">
+                        <a href="">Transfer Member To New Number's</a>
+
+                        <p>You can transfer members associated with your existing account to the new mobile number.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="fqa-container">
+            <h5>
+                <i class="fa-solid fa-comments fa-beat"></i>
+                FAQ-Frequently Asked Question's
+            </h5>
+
+            <div class="faq-view">
+                <div class="download-view">
+                    <a href="">
+                        <i class="fa-solid fa-download"></i>
+                        Download
+                    </a>
+
+                    <div class="faq-photo-view">
+                        <img src="IMAGES/faq_Section.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="faq-container-view">
+                    <h3>
+                        <i class="fa-solid fa-person-circle-question"></i>
+                        FAQ (Frequently Asked Question)
+                    </h3>
+
+                    <div class="question-and-answer">
+                        <div class="question-and-answer-view">
+                            <div class="question-view">
+                                <p>1. Where can I Register for COVID-19 Vaccincation ?</p>
+                                <i class="fa-solid fa-caret-down"></i>
+                            </div>
+
+                            <div class="answer-view">
+                                <p>You can open the Co-WIN portal using the link www.cowin.gov.in and click on the
+                                    “Register/Sign In” tab to register for COVID-19 vaccination, and follow the steps
+                                    thereafter.</p>
+
+                                <div class="answer-photo-view">
+                                    <img src="IMAGES/BannerImage.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="question-and-answer-view">
+                            <div class="question-view">
+                                <p>2. Is there an Mobile App, that need to be installed to register for Vaccination ?</p>
+                                <i class="fa-solid fa-caret-down"></i>
+                            </div>
+
+                            <div class="answer-view">
+                                <p>There is no authorised mobile app for registering for vaccination in India except Aarogya
+                                    Setu and Umang Apps. You need to log into the Co-WIN portal at www.cowin.gov.in.
+                                    Alternatively, you can also register for vaccination through the Aarogya Setu App or
+                                    Umang apps.</p>
+                            </div>
+                        </div>
+
+                        <div class="question-and-answer-view">
+                            <div class="question-view">
+                                <p>3. Which Age groupcan Register for Vaccinationon the Co-WIN Portal ?</p>
+                                <i class="fa-solid fa-caret-down"></i>
+                            </div>
+
+                            <div class="answer-view">
+                                <p>All beneficiaries who have completed 12 years of age and above on the day of registration
+                                    (birth year 2011 or earlier) can register for vaccination.</p>
+                            </div>
+                        </div>
+
+                        <div class="question-and-answer-view">
+                            <div class="question-view">
+                                <p>4. Is Online Registration Mandatory for COVID-19 Vaccincation ?</p>
+                                <i class="fa-solid fa-caret-down"></i>
+                            </div>
+
+                            <div class="answer-view">
+                                <p>No, vaccination centers provide for a limited number of on-spot registration slots every
+                                    day. Beneficiaries can register online or walk-in to vaccination centers where the
+                                    vaccination team staff can register a beneficiary. In general, all beneficiaries are
+                                    recommended to register online and schedule vaccination in advance for a hassle-free
+                                    vaccination experience.</p>
+                            </div>
+                        </div>
+
+                        <div class="question-and-answer-view">
+                            <div class="question-view">
+                                <p>5. How many people can be registered in the Co-WIN portal through one mobile number ?</p>
+                                <i class="fa-solid fa-caret-down"></i>
+                            </div>
+
+                            <div class="answer-view">
+                                <p>Up to 6 people can be registered for vaccination using the same mobile number.</p>
+                            </div>
+                        </div>
+
+                        <div class="question-and-answer-view">
+                            <div class="question-view">
+                                <p>6. How can beneficiaries with no access to smart phones, computers or internet manage
+                                    online registration ?</p>
+                                <i class="fa-solid fa-caret-down"></i>
+                            </div>
+
+                            <div class="answer-view">
+                                <p>Up to 6 people can be registered for vaccination using the same mobile number.
+                                    Beneficiaries can take help from friends or family for online registration.</p>
+                            </div>
+                        </div>
+
+                        <div class="question-and-answer-view">
+                            <div class="question-view">
+                                <p>7. Can I register for vaccination without Aadhaar card ?</p>
+                                <i class="fa-solid fa-caret-down"></i>
+                            </div>
+
+                            <div class="answer-view">
+                                <p>
+                                    Yes, if you are 18 years or older (birth year 2005 or earlier), you can register on
+                                    Co-WIN portal using any of the following ID proofs: <br>
+                                    1. AADHAAR Card <br>
+                                    2. Driving License <br>
+                                    3. PAN Card <br>
+                                    4. Passport <br>
+                                    5. Pension Passbook <br>
+                                    6. NPR Smart Card <br>
+                                    7. Voter ID (EPIC) <br>
+                                    8. Unique Disability Identification Card (UDID) <br>
+                                    9. Ration Card with Photo <br> <br>
+
+                                    If you are 12 years and above on the day of registration but below 18 years old (birth
+                                    year 2006 to 2011), you can register on Co-WIN portal using any of the following ID
+                                    proofs: <br>
+                                    1. AADHAAR Card <br>
+                                    2. PAN Card <br>
+                                    3. Passport <br>
+                                    4. Unique Disability Identification Card (UDID) <br>
+                                    5. Ration Card with Photo
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="question-and-answer-view">
+                            <div class="question-view">
+                                <p>8. Is there any registration charge to be paid ?</p>
+                                <i class="fa-solid fa-caret-down"></i>
+                            </div>
+
+                            <div class="answer-view">
+                                <p>No, there is no registration charge.</p>
+                            </div>
+                        </div>
+
+                        <div class="question-and-answer-view">
+                            <div class="question-view">
+                                <p>9. Is it necessary to register again for 2nd dose or Precaution dose ?</p>
+                                <i class="fa-solid fa-caret-down"></i>
+                            </div>
+
+                            <div class="answer-view">
+                                <p>No, registration is required only once to create a beneficiary account on Co-WIN.
+                                    Thereafter, appointments can be booked, both online or onsite, and vaccination can be
+                                    availed from the same account. It is recommended that a beneficiary should register only
+                                    once so that proper records are maintained. It is also recommended that the registration
+                                    should be done through an active mobile number to avoid problems in future.</p>
+                            </div>
+                        </div>
+
+                        <div class="question-and-answer-view">
+                            <div class="question-view">
+                                <p>10. What are vaccination schedules ?</p>
+                                <i class="fa-solid fa-caret-down"></i>
+                            </div>
+
+                            <div class="answer-view">
+                                <p>
+                                    Vaccination sessions timetables for various vaccination centers offering service, are
+                                    published by the district administrators and vaccination site managers, from time to
+                                    time. <br> <br>
+
+                                    Co-WIN offers vaccination services “Anytime” and “Anywhere” subject to eligibility of
+                                    the beneficiary. All published vaccination sessions are visible to beneficiaries on the
+                                    Co-WIN system, for availing online appointment for vaccination services, as per their
+                                    choice and convenience.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="question-and-answer-view">
+                            <div class="question-view">
+                                <p>11. How can I find the nearest vaccination center ?</p>
+                                <i class="fa-solid fa-caret-down"></i>
+                            </div>
+
+                            <div class="answer-view">
+                                <p>You can search in Co-WIN portal (or Aarogya Setu or Umang) for the vaccination center
+                                    nearest to your location by either searching through Map, PIN code or by choosing the
+                                    State and the District, on the home page of Co-WIN portal.</p>
+
+                                <div class="answer-photo-view">
+                                    <img src="IMAGES/vaccinecenter.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="question-and-answer-view">
+                            <div class="question-view">
+                                <p>12. What information is available regarding the vaccination schedules on Co-WIN ?</p>
+                                <i class="fa-solid fa-caret-down"></i>
+                            </div>
+
+                            <div class="answer-view">
+                                <p>When you search for vaccination centers, the list of centers and the sessions published
+                                    for each of the vaccination center on various dates, is displayed on screen. The number
+                                    of vaccination slots available in the session are also displayed on screen.</p>
+
+                                <div class="answer-photo-view">
+                                    <img src="IMAGES/slot-image1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="question-and-answer-view">
+                            <div class="question-view">
+                                <p>13. What information is available in the published vaccination sessions ?</p>
+                                <i class="fa-solid fa-caret-down"></i>
+                            </div>
+
+                            <div class="answer-view">
+                                <p>
+                                    Following information is displayed on screen for a vaccination session :- <br>
+                                    A. Name of vaccination center. <br>
+                                    B. Address of the vaccination center. <br>
+                                    C. Date of vaccination session. <br>
+                                    D. Vaccine type which is offered in the session. <br>
+                                    E. Age bracket for which services are available. <br>
+                                    F. Whether the services are “free” or “paid”. <br>
+                                    G. If “paid” the rate per dose. <br>
+                                    H. The vaccine dose number (if you look at schedule after signing in to your account, this
+                                    information is not displayed because then the system only shows you sessions and slots
+                                    for the dose no. for which you are eligible). <br>
+                                    I. The number of slots available for booking
+                                </p>
+
+                                <div class="answer-photo-view">
+                                    <img src="IMAGES/slot-image3.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="question-and-answer-view">
+                            <div class="question-view">
+                                <p>14. This appears to be too much information, how can I shortlist the sessions as per my
+                                    preferences ?
+                                </p>
+                                <i class="fa-solid fa-caret-down"></i>
+                            </div>
+
+                            <div class="answer-view">
+                                <p>You can use the various filters and the browsing options to locate the vaccination
+                                    center, session on the date of your convenience choice (subject to availability), for
+                                    the desired vaccine (as per eligibility).
+                                </p>
+
+                                <div class="answer-photo-view">
+                                    <img src="IMAGES/slot-image4.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="question-and-answer-view">
+                            <div class="question-view">
+                                <p>15. What to do if slots are not available in my preferred vaccination center on my
+                                    preferred date ?</p>
+                                <i class="fa-solid fa-caret-down"></i>
+                            </div>
+
+                            <div class="answer-view">
+                                <p>In case of non-availability of slots for scheduling appointment for vaccination in the
+                                    vaccination center of your choice, you may try scheduling appointment in other nearby
+                                    centers or on some other dates for your preferred center. The portal gives you the
+                                    feature of searching vaccination centers using your PIN code and District.
+                                </p>
+
+                                <div class="answer-photo-view">
+                                    <img src="IMAGES/slot-image5.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="question-and-answer-view">
+                            <div class="question-view">
+                                <p>16. What to do if the vaccination schedule is blank or lists very few sessions for dates
+                                    of my convenience or eligibility ?
+                                </p>
+                                <i class="fa-solid fa-caret-down"></i>
+                            </div>
+
+                            <div class="answer-view">
+                                <p>
+                                    Yes, it is possible that no facility near your place has published their vaccination
+                                    program as yet. You may wait for some time till vaccination facilities near your place
+                                    are onboarded on Co-WIN platform, become active and start their services. <br> <br>
+
+                                    Vaccination schedules are published by the District Administrators (for government
+                                    vaccination centers) and by the Site Managers (for private vaccination centers), from
+                                    time to time. These managers are advised to publish longer schedules to provide
+                                    sufficient advance visibility of slots to citizens. You should check again for more
+                                    schedules after some time. (Please also see Q17).
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="question-and-answer-view">
+                            <div class="question-view">
+                                <p>17. When are the vaccination schedules published ?</p>
+                                <i class="fa-solid fa-caret-down"></i>
+                            </div>
+
+                            <div class="answer-view">
+                                <p>Vaccination sessions are published on Co-WIN at 8:00 am, 12:00 pm, 4:00 pm and 8:00 pm
+                                    every day.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="question-and-answer-view">
+                            <div class="question-view">
+                                <p>18. Can I get vaccination without appointment ?</p>
+                                <i class="fa-solid fa-caret-down"></i>
+                            </div>
+
+                            <div class="answer-view">
+                                <p>Appointments for vaccination can be taken either in online or onsite mode. Vaccination is
+                                    recorded only after appointment.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="question-and-answer-view">
+                            <div class="question-view">
+                                <p>19. Can I book an online appointment for vaccination ?</p>
+                                <i class="fa-solid fa-caret-down"></i>
+                            </div>
+
+                            <div class="answer-view">
+                                <p>Yes, you can book appointment for vaccination through Co-WIN portal (www.cowin.gov.in) or
+                                    through the Aarogya Setu App, after signing-in through your registered mobile number.
+                                    The persons who are partially vaccinated outside country, need to get vaccination in
+                                    onsite mode only.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="question-and-answer-view">
+                            <div class="question-view">
+                                <p>20. Can I check the vaccine being administered at each vaccination center ?</p>
+                                <i class="fa-solid fa-caret-down"></i>
+                            </div>
+
+                            <div class="answer-view">
+                                <p>Yes, while scheduling an appointment for vaccination, the system will show vaccination
+                                    center names along with the name of the vaccine that will be administered.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="what-view-on-cowin-container">
+            <h5>
+                <i class="fa-solid fa-hand-point-up fa-beat fa-rotate-90"></i>
+                What's New On COWIN ?
+            </h5>
+
+            <div class="new-cowin-content-container">
+                <div class="new-cowin-content-box">
+                    <div class="new-cowin-box-view">
+                        <div class="new-cowin-question-view">
+                            <div class="number-view first-number-view">
+                                <span>01</span>
+                            </div>
+
+                            <p class="first-number-view-text">New feature to report side effects after covid-19 vaccination.</p>
+                        </div>
+
+                        <div class="new-cowin-answer-view">
+                            <p>This new feature is added to Co-WIN which will allow you to report if there are any side effects after Covid-19 Vaccination.</p>
+                        </div>
+
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+
+                    <div class="new-cowin-box-view">
+                        <div class="new-cowin-question-view">
+                            <div class="number-view">
+                                <span>02</span>
+                            </div>
+
+                            <p>Early administration of a precaution dose of covid-19 vaccine prior to the prescribed time interval to the persons intending to undertake international travel.</p>
+                        </div>
+
+                        <div class="new-cowin-answer-view">
+                            <p>The precaution dose can be administered to such beneficiary less than 9 months to at a minimum interval of 3 months (90 days) from the date of administration of the second dose as recorded on Co-WlN as per requirement of the destination country.</p>
+                        </div>
+
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+
+                    <div class="new-cowin-box-view">
+                        <div class="new-cowin-question-view">
+                            <div class="number-view">
+                                <span>03</span>
+                            </div>
+
+                            <p>COVOAX Vaccination for Children Detail's are Here.</p>
+                        </div>
+
+                        <div class="new-cowin-answer-view">
+                            <p>Children can be registered on Co-WIN using an AADHAAR Card, PAN Card, Unique Disability ID, Ration Card with Photo and School Photo ID Card. Children of age group 12+ yrs can get vaccinated at Private Vaccination Center.</p>
+                        </div>
+
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+
+                    <div class="new-cowin-box-view">
+                        <div class="new-cowin-question-view">
+                            <div class="number-view">
+                                <span>04</span>
+                            </div>
+
+                            <p>Precaution dose is now available for 18+ age group at both Government and Private Vaccination Center.</p>
+                        </div>
+
+                        <div class="new-cowin-answer-view">
+                            <p>Beneficiaries above the 18+ age group and those who have completed 6 months (26 weeks) days after the administration of the second dose, are eligible for the Precaution dose.</p>
+                        </div>
+
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+
+                    <div class="new-cowin-box-view">
+                        <div class="new-cowin-question-view">
+                            <div class="number-view">
+                                <span>05</span>
+                            </div>
+
+                            <p>The New feature “Vaccination Date Correction” is added to Co-WIN.</p>
+                        </div>
+
+                        <div class="new-cowin-answer-view">
+                            <p>This new feature is added to Co-WIN which will allow you to report if there are any side effects after Covid-19 Vaccination.</p>
+                        </div>
+
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+
+                    <div class="new-cowin-box-view">
+                        <div class="new-cowin-question-view">
+                            <div class="number-view">
+                                <span>06</span>
+                            </div>
+
+                            <p>Introducing the New Vaccine CORBEVAX for Children here are detail's.</p>
+                        </div>
+
+                        <div class="new-cowin-answer-view">
+                            <p>Children can be registered on Co-WIN using an AADHAAR Card, PAN Card, Unique Disability ID, Ration Card with Photo and School Photo ID Card. Children of age group 12-14 yrs can get vaccinated in Government Vaccination Center and 12+ yrs can get vaccinated in Private Vaccination Center.</p>
+                        </div>
+
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+
+                    <div class="new-cowin-box-view">
+                        <div class="new-cowin-question-view">
+                            <div class="number-view">
+                                <span>07</span>
+                            </div>
+
+                            <p>Now you can Book an Appointment for ZyCoV-D Vaccine.</p>
+                        </div>
+
+                        <div class="new-cowin-answer-view">
+                            <p>A new vaccine is available for the 18+ age group. ZyCoV-D is now an approved vaccine for the age group of 18+ yrs.</p>
+                        </div>
+
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+
+                    <div class="new-cowin-box-view">
+                        <div class="new-cowin-question-view">
+                            <div class="number-view">
+                                <span>08</span>
+                            </div>
+
+                            <p>HCW/FLW and Citizens in 60+ age group can now avail Precaution Dose.</p>
+                        </div>
+
+                        <div class="new-cowin-answer-view">
+                            <p>
+                                Precaution dose is available for HCW/FLW and Senior Citizens, 6 months (26 weeks) after date of second dose. <br> <br>
+                                Precaution dose is available for now, for those who have taken Covaxin, Covishield or Sputnik V. <br> <br>
+                                Citizens in 60+ age group having co-morbidity should avail precaution dose on medical advice.
+                            </p>
+                        </div>
+
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+
+                    <div class="new-cowin-box-view">
+                        <div class="new-cowin-question-view">
+                            <div class="number-view">
+                                <span>09</span>
+                            </div>
+
+                            <p>Vaccine available for Age Group 15-18 Year's here some detail's.</p>
+                        </div>
+
+                        <div class="new-cowin-answer-view">
+                            <p>Children of age group 15-18 yrs can now register on Co-WIN portal using AADHAAR Card, PAN Card, Unique Disability ID, Ration Card with Photo and School Photo ID Card. Only COVAXIN is approved for this age group currently.</p>
+                        </div>
+
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+
+                    <div class="new-cowin-box-view">
+                        <div class="new-cowin-question-view">
+                            <div class="number-view">
+                                <span>10</span>
+                            </div>
+
+                            <p>New feature to Share Your Vaccination Status on different social media platforms.</p>
+                        </div>
+
+                        <div class="new-cowin-answer-view">
+                            <p>This exciting new feature added to Co-WIN allows you to Share Your Vaccination Status now among your social circle. You need to be fully or partially vaccinated to use this feature.</p>
+                        </div>
+
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+
+                    <div class="new-cowin-box-view">
+                        <div class="new-cowin-question-view">
+                            <div class="number-view">
+                                <span>11</span>
+                            </div>
+
+                            <p>You can download your vaccination certificate for International Travel.</p>
+                        </div>
+
+                        <div class="new-cowin-answer-view">
+                            <p>This new feature allows fully vaccinated citizens to update existing photo identity to passport number and date of birth to get International Travel Certificate.</p>
+                        </div>
+
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+
+                    <div class="new-cowin-box-view">
+                        <div class="new-cowin-question-view">
+                            <div class="number-view">
+                                <span>12</span>
+                            </div>
+
+                            <p>Citizens can link their passports to Co-WIN issued certificate by raising an issue in their accounts.</p>
+                        </div>
+
+                        <div class="new-cowin-answer-view">
+                            <p>This is a new feature provided where you can link your passport by entering Passport number. In order to link your passport to the certificate you need to login into your Co-WIN portal and then raise an issue to get your passport linked by clicking on "Add Passport Details to my vaccination certificate".</p>
+                        </div>
+
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+
+                    <div class="new-cowin-box-view">
+                        <div class="new-cowin-question-view">
+                            <div class="number-view">
+                                <span>13</span>
+                            </div>
+
+                            <p>Introducing “Raise an Issue” to Co-WIN for all your vaccine certificate and account related issues.</p>
+                        </div>
+
+                        <div class="new-cowin-answer-view">
+                            <p>You can now get all your Issues related to your Vaccine Certificate at one place. All you need to do is to login to your Co-WIN portal and click on "Raise an Issue" . Multiple Issue options are provided. You can raise your concerned issues accordingly.</p>
+                        </div>
+
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+
+                    <div class="new-cowin-box-view">
+                        <div class="new-cowin-question-view">
+                            <div class="number-view">
+                                <span>14</span>
+                            </div>
+
+                            <p>Check your eligibility for Dose 2 by signing in on Co-WIN with your registered mobile number.</p>
+                        </div>
+
+                        <div class="new-cowin-answer-view">
+                            <p>Citizens administered with dose 1 can now check their eligibility for Dose 2 by performing a single step. <br> <br>
+                                "Login to your Co-WIN portal" and there you have your eligibility mention next to your name, highlighted as "No. of Days left for Dose 2".
+                            </p>
+                        </div>
+
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+
+                <div class="new-cowin-content-photo-view">
+                    <img src="IMAGES/what's_new_on_cowin.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="india-largest-vaccination">
+            <h5>
+                <i class="fa-solid fa-hand-point-up fa-beat fa-rotate-90"></i>
+                Indian's are Running, The World's Largest Vaccination Drive 
+            </h5>
+
+            <div class="vaccination-drive-container">
+                <div class="vaccination-drive-info-container">
+                    <span>Vaccine's Delivered</span>
+                    <p>
+                        2,20,67,43,793 
+                        <label for="">+ 140</label>
+                    </p>
+
+                    <span>Citizen's Fully Vaccinated</span>
+                    <p>
+                        95.3 Crore
+                        <label for="">+ 30</label>
+                    </p>
+
+                    <span>Percentage (%) of Fully Vaccinated</span>
+                    <p>95.65 %</p>
+                </div>
+
+                <div class="vaccination-drive-map-view">
+                    <img src="IMAGES/india-map.png" alt="">
+
+                    <div class="ladakh-vaccination-info">
+                        <div class="circle">
+                            <div class="circle-info">
+                                <p>Ladakh</p>
+                                <span>
+                                    Today : <label for="">0</label>
+                                </span>
+                                <span>
+                                    Total Dose :<label for="">5,65,130</label>
+                                </span>
+                                <span>
+                                    Fully Vaccinated : <label for="">2,05,150</label>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="jammu-and-kashmir-vaccination-info">
+                        <div class="circle">
+                            <div class="circle-info">
+                                <p>Jammu & Kashmir</p>
+                                <span>
+                                    Today : <label for="">0</label>
+                                </span>
+                                <span>
+                                    Total Dose :<label for="">2,5,65,130</label>
+                                </span>
+                                <span>
+                                    Fully Vaccinated : <label for="">1,20,05,150</label>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="punjab-vaccination-info">
+                        <div class="circle">
+                            <div class="circle-info">
+                                <p>Punjab</p>
+                                <span>
+                                    Today : <label for="">5</label>
+                                </span>
+                                <span>
+                                    Total Dose :<label for="">4,70,65,150</label>
+                                </span>
+                                <span>
+                                    Fully Vaccinated : <label for="">2,30,05,170</label>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="himachal-pradesh-vaccination-info">
+                        <div class="circle">
+                            <div class="circle-info">
+                                <p>Himachal Pradesh</p>
+                                <span>
+                                    Today : <label for="">0</label>
+                                </span>
+                                <span>
+                                    Total Dose :<label for="">1,55,30,150</label>
+                                </span>
+                                <span>
+                                    Fully Vaccinated : <label for="">65,50,170</label>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="uttarakhand-vaccination-info">
+                        <div class="circle">
+                            <div class="circle-info">
+                                <p>Uttarakhand</p>
+                                <span>
+                                    Today : <label for="">0</label>
+                                </span>
+                                <span>
+                                    Total Dose :<label for="">2,05,10,100</label>
+                                </span>
+                                <span>
+                                    Fully Vaccinated : <label for="">87,70,070</label>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chandigarh-vaccination-info">
+                        <div class="circle">
+                            <div class="circle-info">
+                                <p>Chandigarh</p>
+                                <span>
+                                    Today : <label for="">3</label>
+                                </span>
+                                <span>
+                                    Total Dose :<label for="">25,10,100</label>
+                                </span>
+                                <span>
+                                    Fully Vaccinated : <label for="">10,70,070</label>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="haryana-vaccination-info">
+                        <div class="circle">
+                            <div class="circle-info">
+                                <p>Haryana</p>
+                                <span>
+                                    Today : <label for="">7</label>
+                                </span>
+                                <span>
+                                    Total Dose :<label for="">4,25,10,100</label>
+                                </span>
+                                <span>
+                                    Fully Vaccinated : <label for="">1,10,70,070</label>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="delhi-vaccination-info">
+                        <div class="circle">
+                            <div class="circle-info">
+                                <p>Delhi</p>
+                                <span>
+                                    Today : <label for="">7</label>
+                                </span>
+                                <span>
+                                    Total Dose :<label for="">3,75,70,300</label>
+                                </span>
+                                <span>
+                                    Fully Vaccinated : <label for="">1,57,80,970</label>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rajasthan-vaccination-info">
+                        <div class="circle">
+                            <div class="circle-info">
+                                <p>Rajasthan</p>
+                                <span>
+                                    Today : <label for="">1</label>
+                                </span>
+                                <span>
+                                    Total Dose :<label for="">11,85,90,770</label>
+                                </span>
+                                <span>
+                                    Fully Vaccinated : <label for="">5,45,20,570</label>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="uttar-pradesh-vaccination-info">
+                        <div class="circle">
+                            <div class="circle-info">
+                                <p>Uttar Pradesh</p>
+                                <span>
+                                    Today : <label for="">10</label>
+                                </span>
+                                <span>
+                                    Total Dose :<label for="">40,55,95,910</label>
+                                </span>
+                                <span>
+                                    Fully Vaccinated : <label for="">15,65,90,310</label>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bihar-vaccination-info">
+                        <div class="circle">
+                            <div class="circle-info">
+                                <p>Bihar</p>
+                                <span>
+                                    Today : <label for="">0</label>
+                                </span>
+                                <span>
+                                    Total Dose :<label for="">15,95,25,240</label>
+                                </span>
+                                <span>
+                                    Fully Vaccinated : <label for="">6,95,80,650</label>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="assam-vaccination-info">
+                        <div class="circle">
+                            <div class="circle-info">
+                                <p>Assam</p>
+                                <span>
+                                    Today : <label for="">0</label>
+                                </span>
+                                <span>
+                                    Total Dose :<label for="">5,15,20,360</label>
+                                </span>
+                                <span>
+                                    Fully Vaccinated : <label for="">2,65,05,450</label>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gujarat-vaccination-info">
+                        <div class="circle">
+                            <div class="circle-info">
+                                <p>Gujarat</p>
+                                <span>
+                                    Today : <label for="">7</label>
+                                </span>
+                                <span>
+                                    Total Dose :<label for="">12,35,60,960</label>
+                                </span>
+                                <span>
+                                    Fully Vaccinated : <label for="">5,40,50,550</label>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="madhya-pradesh-vaccination-info">
+                        <div class="circle">
+                            <div class="circle-info">
+                                <p>Madhya Pradesh</p>
+                                <span>
+                                    Today : <label for="">0</label>
+                                </span>
+                                <span>
+                                    Total Dose :<label for="">13,95,40,490</label>
+                                </span>
+                                <span>
+                                    Fully Vaccinated : <label for="">5,25,97,435</label>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="jharkhand-vaccination-info">
+                        <div class="circle">
+                            <div class="circle-info">
+                                <p>Jharkhand</p>
+                                <span>
+                                    Today : <label for="">0</label>
+                                </span>
+                                <span>
+                                    Total Dose :<label for="">4,15,60,990</label>
+                                </span>
+                                <span>
+                                    Fully Vaccinated : <label for="">1,45,87,905</label>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="west-bengal-vaccination-info">
+                        <div class="circle">
+                            <div class="circle-info">
+                                <p>West Bengal</p>
+                                <span>
+                                    Today : <label for="">1</label>
+                                </span>
+                                <span>
+                                    Total Dose :<label for="">15,10,50,190</label>
+                                </span>
+                                <span>
+                                    Fully Vaccinated : <label for="">5,75,87,713</label>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="maharashtra-vaccination-info">
+                        <div class="circle">
+                            <div class="circle-info">
+                                <p>Maharashtra</p>
+                                <span>
+                                    Today : <label for="">15</label>
+                                </span>
+                                <span>
+                                    Total Dose :<label for="">17,60,30,370</label>
+                                </span>
+                                <span>
+                                    Fully Vaccinated : <label for="">7,55,67,853</label>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chhattisgarh-vaccination-info">
+                        <div class="circle">
+                            <div class="circle-info">
+                                <p>Chhattisgarh</p>
+                                <span>
+                                    Today : <label for="">0</label>
+                                </span>
+                                <span>
+                                    Total Dose :<label for="">4,55,97,907</label>
+                                </span>
+                                <span>
+                                    Fully Vaccinated : <label for="">2,23,45,135</label>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="odisha-vaccination-info">
+                        <div class="circle">
+                            <div class="circle-info">
+                                <p>Odisha</p>
+                                <span>
+                                    Today : <label for="">0</label>
+                                </span>
+                                <span>
+                                    Total Dose :<label for="">8,23,87,100</label>
+                                </span>
+                                <span>
+                                    Fully Vaccinated : <label for="">3,33,55,457</label>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="telangana-vaccination-info">
+                        <div class="circle">
+                            <div class="circle-info">
+                                <p>Telangana</p>
+                                <span>
+                                    Today : <label for="">3</label>
+                                </span>
+                                <span>
+                                    Total Dose :<label for="">7,47,57,770</label>
+                                </span>
+                                <span>
+                                    Fully Vaccinated : <label for="">3,35,875,133</label>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="andhra-pradesh-vaccination-info">
+                        <div class="circle">
+                            <div class="circle-info">
+                                <p>Andhra Pradesh</p>
+                                <span>
+                                    Today : <label for="">0</label>
+                                </span>
+                                <span>
+                                    Total Dose :<label for="">10,57,87,570</label>
+                                </span>
+                                <span>
+                                    Fully Vaccinated : <label for="">5,65,895,250</label>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="karnataka-vaccination-info">
+                        <div class="circle">
+                            <div class="circle-info">
+                                <p>Karnataka</p>
+                                <span>
+                                    Today : <label for="">0</label>
+                                </span>
+                                <span>
+                                    Total Dose :<label for="">13,43,59,120</label>
+                                </span>
+                                <span>
+                                    Fully Vaccinated : <label for="">5,75,995,150</label>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="kerla-vaccination-info">
+                        <div class="circle">
+                            <div class="circle-info">
+                                <p>Kerla</p>
+                                <span>
+                                    Today : <label for="">5</label>
+                                </span>
+                                <span>
+                                    Total Dose :<label for="">5,43,87,100</label>
+                                </span>
+                                <span>
+                                    Fully Vaccinated : <label for="">3,85,195,120</label>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tamil-nadu-vaccination-info">
+                        <div class="circle">
+                            <div class="circle-info">
+                                <p>Tamil Nadu</p>
+                                <span>
+                                    Today : <label for="">0</label>
+                                </span>
+                                <span>
+                                    Total Dose :<label for="">13,15,93,550</label>
+                                </span>
+                                <span>
+                                    Fully Vaccinated : <label for="">5,75,095,020</label>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="india-map-meter">
+                        <span>6M</span>
+
+                        <div class="india-map-meter-two">
+                            <span>3M</span>
+                        </div>
+
+                        <div class="india-map-meter-three">
+                            <span>1M</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="download-vaccination-drive-view">
+                    <a href="">
+                        View vaccination Dashboard
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="our-partners">
+            <h5>
+                <i class="fa-solid fa-hand-point-up fa-beat fa-rotate-90"></i>
+                Our Partner's
+            </h5>
+
+            <div class="partners-view">
+                <div class="partner-photo-view">
+                    <img src="IMAGES/partners_page.svg" alt="">
+                </div>
+
+                <div class="partners-photos-view">
+                    <div class="partner-photo-list-view">
+                        <button>
+                            <img src="IMAGES/digilocker_new_Logo.svg" alt="">
+                        </button>
+
+                        <button>
+                            <img src="IMAGES/umang_new_logo.svg" alt="">
+                        </button>
+
+                        <button>
+                            <img src="IMAGES/arogya_setu_logo1.svg" alt="">
+                        </button>
+
+                        <button>
+                            <img src="IMAGES/my_gov_new_logo.svg" alt="">
+                        </button>
+                    </div>
+
+                    <div class="partner-button-view">
+                        <a href="">View More</a>
+
+                        <a href="">Register As Partner's</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="sub-footer">
+                <div class="sub-footer-content">
+                    <div class="footer-content">
+                        <h5>Vaccination Service's</h5>
+
+                        <a href="">Register Member</a>
+                        
+                        <a href="">Search Vaccination Center</a>
+                        
+                        <a href="">Book Vaccination Slot's</a>
+                        
+                        <a href="">Manage Appointment</a>
+                        
+                        <a href="">Download Certificate</a>
+                    </div>
+
+                    <div class="footer-content">
+                        <h5>Platform's</h5>
+
+                        <a href="">CoWIN International</a>
+                        
+                        <a href="">Vaccinator</a>
+                        
+                        <a href="">Department Login</a>
+                        
+                        <a href="">Verify Certificate's</a>
+                        
+                        <a href="">Vaccination Statistics</a>
+                    </div>
+
+                    <div class="footer-content">
+                        <h5>Resource's</h5>
+
+                        <a href="">How To Get Vaccinated</a>
+                        
+                        <a href="">Do's & Don't</a>
+                        
+                        <a href="">Over-view</a>
+                        
+                        <a href="">API Guideline's</a>
+                        
+                        <a href="">Download Certificate</a>
+
+                        <a href="">Grievance Guide-line's</a>
+                    </div>
+                </div>
+
+                <div class="sub-footer-sub-content">
+                    <div class="sub-footer-content-view">
+                        <div class="footer-content">
+                            <h5>Support</h5>
+
+                            <a href="">Frequently Asked Question</a>
+
+                            <a href="">Certificate Correction's</a>
+                        </div>
+
+                        <div class="footer-content">
+                            <h5>Contact Us</h5>
+
+                            <a href="">Helpline: +91-11-23978046</a>
+
+                            <a href="">Technical Helpline: 0120-4783222</a>
+                        </div>
+                    </div>
+
+                    <div class="border-view"></div>
+
+                    <div class="sub-footer-content-view">
+                        <div class="footer-content">
+                            <h5>Child</h5>
+
+                            <a href="">1098</a>
+                        </div>
+
+                        <div class="footer-content">
+                            <h5>Mental Health</h5>
+
+                            <a href="">08046110007</a>
+                        </div>
+
+                        <div class="footer-content">
+                            <h5>Senior Citizen</h5>
+
+                            <a href="">14567</a>
+                        </div>
+
+                        <div class="footer-content">
+                            <h5>NCW</h5>
+
+                            <a href="">7827170170</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="support-for-covid-container">
+                <div class="support-container" id="support-container">
+                    <i class="fa-solid fa-phone"></i>
+
+                    <p>Support for <br> COVID-19</p>
+
+                    <div class="support-number-container" id="support-number-container">
+                        <span>Health Ministry</span>
+                        <a href="">+91-11-23978046 or 1075</a>
+
+                        <div class="border-view"></div>
+
+                        <span>Child</span>
+                        <a href="">1098</a>
+
+                        <div class="border-view"></div>
+
+                        <span>Mental Health</span>
+                        <a href="">08046110007</a>
+
+                        <div class="border-view"></div>
+
+                        <span>Senior Citizen</span>
+                        <a href="">14567</a>
+
+                        <div class="border-view"></div>
+
+                        <span>NCW</span>
+                        <a href="">7827170170</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sub-footer-container">
+                <p>Copyright © 2023 Co-WIN. All Rights Reserved.</p>
+
+                <div class="sub-footer-photos">
+                    <a href="">
+                        <img src="IMAGES/national-health-authority.jpg" alt="">
+                    </a>
+
+                    <a href="">
+                        <img src="IMAGES/undp-logo-vertical.svg" alt="">
+                    </a>
+                </div>
+
+                <div class="term-and-privacy">
+                    <a href="">Term's of Service</a>
+
+                    <span></span>
+
+                    <a href="">Privacy's Policy</a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- JAVA-SCRIPT -->
+        <script src="SCRIPT.JS"></script>
+    </body>
+</html>
